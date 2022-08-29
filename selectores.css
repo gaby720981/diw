@@ -1,0 +1,15 @@
+table {
+    align-items: center;
+}
+
+.cuerpo {
+    background-color: #393E46;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px; 
+}
+
+body {
+    background-color: #222831;
+    color: #eeeeee;
+}
