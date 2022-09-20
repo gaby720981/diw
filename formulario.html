@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form method="post" action="informacion.php">
+        <label for="nombre">Nombre</label><br>
+        <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre"><br>
+        <label for="apellido">Apellido</label><br>
+        <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido"><br><br>
+        <label for="email">Correo Electróonico</label><br>
+        <input type="email" name="email" id="email" size="30"><br>
+        <label for="password">Contraseña</label><br>
+        <input type="password" name="password" id="password" maxlength="8"><br><br>
+        <label for="nacimiento">Fecha de nacimiento</label><br>
+        <input type="date" name="nacimiento" id="nacimiento"><br>
+
+        <p>¿Tiene pasaporte?</p>
+        <input type="radio" name="pasaporte" id="si" value="si"> <label for="si">SI</label>
+        <input type="radio" name="pasaporte" id="no" value="no"> <label for="no">NO</label>
+
+        <b><p>Intereses</p></b>
+        <input type="checkbox" name="intereses" id="deporte"/><label for="deporte"> Deporte</label><br> 
+        <input type="checkbox" name="intereses" id="muesica"/><label for="musica"> Música</label><br>
+        <input type="checkbox" name="intereses" id="arte"/><label for="arte"> Arte</label><br>
+        <input type="checkbox"name="intereses" id="juegos"/><label for="juegos"> Juegos</label><br>
+
+        <p>
+            <label for="provincia"> ¿En qué provincia vives?</label><br><br>
+            <select name="provincia" id="provincia">
+                <option value="formosa">Formosa</option>
+                 <option value="cordoba">Córdoba</option>
+                 <option value="chaco">Chaco</option>
+                 <option value="santafe">Santa Fé</option>
+                 <option value="formosa">Formosa</option>
+                 <option value="buenosaires">Buenos Aires</option>
+                 <option value="misiones">Misiones</option>
+                 <option value="tierra">Tierra del Fuego</option>
+            </select><br><br><br>
+        <input type="submit">
+       </p>
+    </form>
+</body>
+</html>
