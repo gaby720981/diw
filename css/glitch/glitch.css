@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    background-color: #393E46;
+}
+
+
+.glitch-container {
+    max-width: 800px;
+    min-width: 100px;
+    height: auto;
+    display: flex;
+    margin: 200px auto;
+    background: url("imagen1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: glitch 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite,
+    motion 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
+}
+
+
+.glitch-container img {
+    width: 800px;
+    height: auto;
+    opacity: 0;
+}
+
+
+@keyframes glitch {
+
+    0% {
+        background: url("imagen1.png");
+        background-size: contain;
+    }
+
+    1.5% {
+        background: url("imagen2.png");
+        background-size: contain;
+    }
+
+    1.7% {
+        background: url("imagen3.png");
+        background-size: contain;
+    }
+
+
+    1.9% {
+        background: url("imagen4.png");
+        background-size: contain;
+    }
+
+    2% {
+        background: url("imagen3.png");
+        background-size: contain;
+    }
+
+    2.2% {
+        background: url("imagen4.png");
+        background-size: contain;
+    }
+
+    2.4% {
+        background: url("imagen2.png");
+        background-size: contain;
+    }
+
+    5% {
+        background: url("imagen2.png");
+        background-size: contain;
+    }
+
+    20% {
+        background: url("imagen2.png");
+        background-size: contain;
+    }
+
+    50% {
+        background: url("imagen2.png");
+        background-size: contain;
+    }
+
+    51% {
+        background: url("imagen3.png");
+        background-size: contain;
+    }
+
+    51.8% {
+        background: url("imagen4.png");
+        background-size: contain;
+    }
+
+    60% {
+        background: url("imagen3.png");
+        background-size: contain;
+    }
+
+    61% {
+        background: url("imagen4.png");
+        background-size: contain;
+    }
+
+    61.8% {
+        background: url("imagen2.png");
+        background-size: contain;
+    }
+
+    62% {
+        background: url("imagen3.png");
+        background-size: contain;
+    }
+
+    62.3% {
+        background: url("imagen4.png");
+        background-size: contain;
+    }
+
+    63% {
+        background: url("imagen2.png");
+        background-size: contain;
+    }
+
+
+
+}
+
+
+
+@keyframes motion {
+
+    7% {
+        transform: translateX(0);
+    }
+    7.5% {
+        transform: translateX(0) translateY(5px);
+    }
+    7.9% {
+        transform: translateX(0) translateY(0);
+    }
+    
+    40% {
+        transform: translateX(0);
+    }
+    40.5% {
+        transform: translateX(-12px) translateY(0);
+    }
+    40.9% {
+        transform: translateX(0) translateY(0);
+    }
+    
+    70% {
+        transform: translateX(0);
+    }
+    70.5% {
+        transform: translateX(5px) translateY(0);
+    }
+    70.9% {
+        transform: translateX(0) translateY(0);
+    }
+
+}
