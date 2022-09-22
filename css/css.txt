@@ -1,4 +1,4 @@
-SELECTORES:
+-SELECTORES-:
 
 Universal
 De tipo
@@ -10,7 +10,7 @@ Pseudo-clases
 
 
 
- ESPECIFICIDAD:
+-ESPECIFICIDAD-:
 
 !important
 
