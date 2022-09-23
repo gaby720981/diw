@@ -1,0 +1,27 @@
+-SELECTORES-:
+
+Universal
+De tipo
+Clases
+ID
+Atributo
+Descendiente
+Pseudo-clases
+
+
+
+-ESPECIFICIDAD-:
+
+!important
+
+estilos en línea
+
+identificadores
+
+clases
+pseudo-clases
+atributos
+
+elementos
+pseudo-elementos
+ 

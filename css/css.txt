@@ -1,27 +1,37 @@
--SELECTORES-:
+Tabla de contenidos
 
-Universal
-De tipo
-Clases
-ID
-Atributo
-Descendiente
-Pseudo-clases
+1. Introducción  OK-------------------------------------------------
 
+2. ¿Qué es CSS? OK-------------------------------------------------
 
+3. ¿Para qué utilizar CSS? OK-------------------------------------------------
 
--ESPECIFICIDAD-:
+4. Reglas CSS OK-------------------------------------------------
 
-!important
+5. Selectores OK-------------------------------------------------
+5.1. Selectores básicos
+5.2. Selector descendente
+5.3. Selector de clase
+5.4. Selector de ID
+5.5. Selectores avanzados
 
-estilos en línea
+6. Herencia OK-------------------------------------------------
 
-identificadores
+7. Agrupar reglas OK-------------------------------------------------
 
-clases
-pseudo-clases
-atributos
+8. Formas de insertar CSS OK-------------------------------------------------
 
-elementos
-pseudo-elementos
- 
+8.1. Hojas de estilo en línea
+8.2. Hojas de estilo interna
+8.3. Hojas de estilo externas
+
+9. Modelo de Cajas
+9.1. Dimensiones de las cajas
+9.2. Margen
+9.3. Relleno o padding
+
+10. Web Responsive
+10.1. Vista de cuadrícula
+10.2. Media Query
+10.3. Flexbox
+10.4. Desafío Final

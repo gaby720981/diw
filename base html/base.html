@@ -5,6 +5,9 @@
           <meta name="language" content="es"/> <!--Idioma de la página -->
           <meta name="title" content="Página web"/>
           <link rel="stylesheet" type="text/css" href="base.css"/>
+          <!--rel: indica el tipo de relación que existe entre el recurso enlazado y la página HTML
+          type: indica el tipo de recurso enlazado
+          href: indica la URL del archivo CSS que contiene los estilos-->
           <link rel="icon" href="gati.ico"/> <!--ícono de la página. Tiene que tener formato .ico-->
           <meta name="description" content="breve descripción del contenido de la página"/>
           <meta name="keywords" content="HTML, CSS, JavaScript"/> <!--Palabras clave para motores de búsqueda-->
@@ -32,7 +35,8 @@
           </div>
           
      	<a href="cosas/pagina2.html">Click aquí para ingresar a Página 2</a><br><br>
-          Haz <a href="https://google.com" target="_BLANK">Click aquí</a> para ir a <b>Google.</b>
+          <!--etiqueta <a> permite crear un enlace a otras páginas de la web-->
+          Haz <a href="https://google.com" target="_blank">Click aquí</a> para ir a <b>Google.</b>
 
           <h1>LISTAS</h1>
           <h2>Mi día</h2>
@@ -203,52 +207,6 @@
                     </p>
                </section>
           </article>
-          <aside> <!--Muestra algún contenido aparte del contenido en el que se encuentra-->
-               <h2>Contenido extra</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.</p>
-          </aside>
-     <center> <!--CENTER Alinea el texto al centro. (Recomendable hacerlo con CSS)-->
-          <table> <!--Las tablas se crean fila por fila, en cada fila se especifican los contenidos de las celdas-->
-               <caption> Título de la tabla</caption>
-               <tr> <!--FILA DE ENCABEZADO-->
-                    <th><center><b>Nombre</b></center></th>
-                    <th><b>Apellido</b></th>
-                    <th><b>Canal</b></th>
-                    <th><b>Seguidores</b></th>
-               </tr>
-               <tr> <!--FILA SIGUIENTE-->
-                    <td>Lucas</td> <!--CELDA-->
-                    <td>Dalto</td> <!--CELDA DE LA SIGUIENTE COLUMNA-->
-                    <td>Soy Dalto</td>
-                    <td>300.000</td>
-               </tr>
-               <tr>
-                    <td>Juan</td>
-                    <td>Villalvazo</td>
-                    <td>Juan Villalvazo</td>
-                    <td>100.000</td>
-               </tr>
-               <tr>
-                    <td>Jorge</td>
-                    <td>Villalobos</td>
-                    <td>Latincoder</td>
-                    <td>120.000</td>
-               </tr>
-          </table><br>
-          
-          <!--Si la tabla es grande, la dividimos en 3 partes con las siguientes etiquetas: 
-          <thead></thead> (el encabezado),
-          <tfoot></tfoot> (el pie de la tabla, se copian los encabezados),
-          <tbody></tbody> (cuerpo)-->
-
-          <!--Pueden combinarse celdas HORIZONTALMENTE mediante los atributos COLSPAN o VERTICALMENTE con ROWSPAN,
-          tiene que especificarse cuantas celdas se van a combinar-->
-
-     </center>
-          <a href="#codigo">Click aquí para ir al código</a><br>
           <p>
                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -281,37 +239,60 @@
                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                consequat.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               lore.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               lore.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               lore.
           </p>
-          <h4 id="codigo">El codigo es: asdlfjhgfdsaSDFGHJ</h4>
+          <center> <!--CENTER Alinea el texto al centro. (Recomendable hacerlo con CSS)-->
+               <table>
+                    <!--Las tablas se crean fila por fila, en cada fila se especifican los contenidos de las celdas-->
+                    <caption> Título de la tabla</caption>
+                    <tr>
+                         <!--FILA DE ENCABEZADO-->
+                         <th>
+                              <center><b>Nombre</b></center>
+                         </th>
+                         <th><b>Apellido</b></th>
+                         <th><b>Canal</b></th>
+                         <th><b>Seguidores</b></th>
+                    </tr>
+                    <tr>
+                         <!--FILA SIGUIENTE-->
+                         <td>Lucas</td>
+                         <!--CELDA-->
+                         <td>Dalto</td>
+                         <!--CELDA DE LA SIGUIENTE COLUMNA-->
+                         <td>Soy Dalto</td>
+                         <td>300.000</td>
+                    </tr>
+                    <tr>
+                         <td>Juan</td>
+                         <td>Villalvazo</td>
+                         <td>Juan Villalvazo</td>
+                         <td>100.000</td>
+                    </tr>
+                    <tr>
+                         <td>Jorge</td>
+                         <td>Villalobos</td>
+                         <td>Latincoder</td>
+                         <td>120.000</td>
+                    </tr>
+               </table><br>
+          
+          <!--Si la tabla es grande, la dividimos en 3 partes con las siguientes etiquetas: 
+          <thead></thead> (el encabezado),
+          <tfoot></tfoot> (el pie de la tabla, se copian los encabezados),
+          <tbody></tbody> (cuerpo)-->
+
+          <!--Pueden combinarse celdas HORIZONTALMENTE mediante los atributos COLSPAN o VERTICALMENTE con ROWSPAN,
+          tiene que especificarse cuantas celdas se van a combinar-->
+          </center>
+
+          <aside> <!--Muestra algún contenido aparte del contenido en el que se encuentra-->
+               <h2>Contenido extra</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+          </aside>
           <footer> <!--pié de página-->
-               <ul>
-                    <li><a href="https://instagram.com/soydalto">Instagram</a></li> <!--etiqueta <a> permite crear un enlace a otras páginas de la web-->
-                    <li><a href="https://instagram.com/soydalto">Instagram</a></li>
-                    <li><a href="https://instagram.com/soydalto">Instagram</a></li>
-               </ul>
                <center>
                     <h4>Copyright - Todos los derechos reservados</h4>
                </center>
