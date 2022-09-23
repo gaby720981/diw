@@ -15,7 +15,7 @@ Tabla de contenidos
 5.4. Selector de ID
 5.5. Selectores avanzados
 
-6. Herencia
+6. Herencia 
 
 7. Agrupar reglas
 
