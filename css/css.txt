@@ -25,7 +25,7 @@ Tabla de contenidos
 8.2. Hojas de estilo interna
 8.3. Hojas de estilo externas
 
-9. Modelo de Cajas
+9. Modelo de Cajas OK-------------------------------------------------
 9.1. Dimensiones de las cajas
 9.2. Margen
 9.3. Relleno o padding
