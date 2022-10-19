@@ -80,4 +80,6 @@ console.log(apellido)
 
 //CONSTANTES EN TIPO DE DATOS PRIMITIVOS:
 
-
+const pi = 3.14
+let radio = 15
+console.log(pi*radio)
