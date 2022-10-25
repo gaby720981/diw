@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+/* box-sizing: border-box; asegura que el relleno y el borde estén incluidos en el ancho y alto total de los elementos.*/
+
+.tit {
+    background-color:rgb(20, 220, 143);
+    display:inline-block;
+
+    /* 
+    padding-top: 20px; relleno superior
+    padding-bottom: 20px; inferior
+    padding-left: 20px; izq
+    padding-right: 20px; der
+    height: 200px; alto
+    width: 200px; ancho  */
+
+    padding: 100px;
+    text-align: center; /*centra el texto al centro*/
+
+    margin:20px 10px; /*distancia entre cajas*/
+    border-radius: 10px; /*redondear el borde*/
+}
+
+/*el h1 es un elemento en linea y "display:inline-block" le permite adquirir propiedades de un elemento en bloque.
+"padding" es la distancia entre el texto y la caja*/

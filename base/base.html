@@ -4,7 +4,7 @@
           <meta charset="utf-8"/> <!--Especifica la codificación de caracteres para el documento HTML-->
           <meta name="language" content="es"/> <!--Idioma de la página -->
           <meta name="title" content="Página web"/>
-          <link rel="stylesheet" type="text/css" href="base.css"/>
+          <link rel="stylesheet" type="text/css" href="/base/base.css"/>
           <!--rel: indica el tipo de relación que existe entre el recurso enlazado y la página HTML
           type: indica el tipo de recurso enlazado
           href: indica la URL del archivo CSS que contiene los estilos-->
@@ -19,13 +19,18 @@
           <meta name="robots" content="noindex"/> <!--permite controlar el comportamiento de indexación a nivel de página. 
           Con noindex y nofollow la web no aparecerá en los resultados de búsqueda.-->
           <meta name="robots" content="nofollow"/>
+
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+          <!--width=device-width establece el ancho de la página para seguir el ancho de pantalla del dispositivo;
+          initial-scale=1.0 establece el nivel de zoom inicial cuando el navegador carga la página por primera vez.-->
      </head>
      <body> <!--cuerpo principal mostrado en pantalla-->
 
           <button onclick="mensaje()">Mensaje</button>
           
           <div> <!--separa y agrupa contenido para luego darle estilo desde codigo CSS .-->
-               <h1 id="tit">Título</h1>
+               <h1 class="tit">Título</h1>
+               <h1 class="tit">Título2</h1>
                <marquee scrollamount="15" bgcolor="yellow">SEXY MOVIMIENTO</marquee>
                <h2>Pagina 1</h2>
                <p> Ésta es una página de práctica.</p>
