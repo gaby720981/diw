@@ -1,0 +1,28 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+}
+div {
+    width: 49%;
+    display: inline-block;
+    padding: 20px;
+    background: #ddd;
+}
+h2 {
+    font-size: 24px;
+}
+
+.caja-2 {
+    background: #bbb;
+}
+
+@media only screen and(max-width: 800px) {
+    div {
+        display: block;
+        width: 100%;
+    }
+    h2 {
+        font-size: 20px;
+    }
+
+}

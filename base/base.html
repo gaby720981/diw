@@ -1,286 +1,324 @@
-<!doctype html> <!--indica que es efectivamente una pag html-->
-<html> <!--incluye el contenido completo de la pag.-->
-     <head> <!--cabecera, informacion general de la pagina-->
-          <meta charset="utf-8"/> <!--Especifica la codificación de caracteres para el documento HTML-->
-          <meta name="language" content="es"/> <!--Idioma de la página -->
-          <meta name="title" content="Página web"/>
-          <link rel="stylesheet" type="text/css" href="/base/base.css"/>
-          <!--rel: indica el tipo de relación que existe entre el recurso enlazado y la página HTML
+<!doctype html>
+<!--indica que es efectivamente una pag html-->
+<html>
+<!--incluye el contenido completo de la pag.-->
+
+<head>
+     <!--cabecera, informacion general de la pagina-->
+     <meta charset="utf-8" />
+     <!--Especifica la codificación de caracteres para el documento HTML-->
+     <meta name="language" content="es" />
+     <!--Idioma de la página -->
+     <meta name="title" content="Página web" />
+     <link rel="stylesheet" type="text/css" href="/base/base.css" />
+     <!--rel: indica el tipo de relación que existe entre el recurso enlazado y la página HTML
           type: indica el tipo de recurso enlazado
           href: indica la URL del archivo CSS que contiene los estilos-->
-          <link rel="icon" href="gati.ico"/> <!--ícono de la página. Tiene que tener formato .ico-->
-          <meta name="description" content="breve descripción del contenido de la página"/>
-          <meta name="keywords" content="HTML, CSS, JavaScript"/> <!--Palabras clave para motores de búsqueda-->
-          <meta name="author" content="nombredelautor"/>
-          <meta name="keywords" content="harina,leche,huevo,galletita"/>
-          <meta name="description" content="Alimentos S.A. Es una compañia destinada a 
-          brindar los mejores alimentos de calidad en tiempo y forma"/>
-          <meta name="copyright" content="Fcebook Inc."/>
-          <meta name="robots" content="noindex"/> <!--permite controlar el comportamiento de indexación a nivel de página. 
+     <link rel="icon" href="gati.ico" />
+     <!--ícono de la página. Tiene que tener formato .ico-->
+     <meta name="description" content="breve descripción del contenido de la página" />
+     <meta name="keywords" content="HTML, CSS, JavaScript" />
+     <!--Palabras clave para motores de búsqueda-->
+     <meta name="author" content="nombredelautor" />
+     <meta name="keywords" content="harina,leche,huevo,galletita" />
+     <meta name="description" content="Alimentos S.A. Es una compañia destinada a 
+          brindar los mejores alimentos de calidad en tiempo y forma" />
+     <meta name="copyright" content="Fcebook Inc." />
+     <meta name="robots" content="noindex" />
+     <!--permite controlar el comportamiento de indexación a nivel de página. 
           Con noindex y nofollow la web no aparecerá en los resultados de búsqueda.-->
-          <meta name="robots" content="nofollow"/>
+     <meta name="robots" content="nofollow" />
 
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-          <!--width=device-width establece el ancho de la página para seguir el ancho de pantalla del dispositivo;
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--width=device-width establece el ancho de la página para seguir el ancho de pantalla del dispositivo;
           initial-scale=1.0 establece el nivel de zoom inicial cuando el navegador carga la página por primera vez.-->
-     </head>
-     <body> <!--cuerpo principal mostrado en pantalla-->
+</head>
 
+<body>
+     <!--cuerpo principal mostrado en pantalla-->
+     <div>
+          <!--separa y agrupa contenido para luego darle estilo desde codigo CSS .-->
+          <h1 class="tit">Título</h1>
+          <h1 class="tit">Título2</h1>
+          <marquee scrollamount="15" bgcolor="yellow">SEXY MOVIMIENTO</marquee>
+          <i>Letras inclinadas</i>
+          <b>Letras en negrita</b>
+          <small>Letras chiquititas</small>
+          <em>Énfasis</em>
+          <strong>Énfasis fuerte</strong>
+          <mark>Resaltar</mark>
+          <u>Subrayar</u>
           <button onclick="mensaje()">Mensaje</button>
-          
-          <div> <!--separa y agrupa contenido para luego darle estilo desde codigo CSS .-->
-               <h1 class="tit">Título</h1>
-               <h1 class="tit">Título2</h1>
-               <marquee scrollamount="15" bgcolor="yellow">SEXY MOVIMIENTO</marquee>
-               <h2>Pagina 1</h2>
-               <p> Ésta es una página de práctica.</p>
-               <i>Letras inclinadas</i>
-               <b>Letras en negrita</b>
-               <small>Letras chiquititas</small>
-               <em>Énfasis</em>
-               <strong>Énfasis fuerte</strong>
-               <mark>Resaltar</mark>
-               <u>Subrayar</u>
-               
-          </div>
-     	<a href="cosas/pagina2.html">Click aquí para ingresar a Página 2</a><br><br>
-          <!--etiqueta <a> permite crear un enlace a otras páginas de la web-->
-          Haz <a href="https://google.com" target="_blank">Click aquí</a> para ir a <b>Google.</b>
 
-          <h1>LISTAS</h1>
-          <h2>Mi día</h2>
-          <ol type="a"> <!--orden en base a letras en orden alfabético-->
-               <li>Me levanto</li>		
-               <li>Desayuno</li>
-               <li>Camino al trabajo</li>
-               <li>En la empresa, comienzo con la daily</li>
-               <li>Almuerzo</li>
-               <li>Continúo con mis tareas</li>
-          </ol>
-          <ol type="a" reversed> <!--orden en base a letras pero en orden inverso al alfabético-->
-               <li>Me levanto</li>		
-               <li>Desayuno</li>
-               <li>Camino al trabajo</li>
-               <li>En la empresa, comienzo con la daily</li>
-               <li>Almuerzo</li>
-               <li>Continúo con mis tareas</li>
-          </ol>
-          <ol type="a" start="3"> <!--orden en base a letras pero comenzando por la letra c-->
-               <li>Me levanto</li>		
-               <li>Desayuno</li>
-               <li>Camino al trabajo</li>
-               <li>En la empresa, comienzo con la daily</li>
-               <li>Almuerzo</li>
-               <li>Continúo con mis tareas</li>
-          </ol>
-          <ul> <!--lista no ordenada.-->
-               <li>Me levanto</li>		
-               <li>Desayuno</li>
-               <li>Camino al trabajo</li>
-               <li>En la empresa, comienzo con la daily</li>
-               <li>Almuerzo</li>
-               <li>Continúo con mis tareas</li>
-          </ul>
-          <ul style="list-style-type:circle;"> <!--lista no ordenada con una viñeta diferente a la predefinida "disc".-->
-               <li>Me levanto</li>		
-               <li>Desayuno</li>
-               <li>Camino al trabajo</li>
-               <li>En la empresa, comienzo con la daily</li>
-               <li>Almuerzo</li>
-               <li>Continúo con mis tareas</li>
-          </ul>
-          <ul style="list-style-type:none;"> <!--lista no ordenada sin viñeta-->
-               <li>Me levanto</li>		
-               <li>Desayuno</li>
-               <li>Camino al trabajo</li>
-               <li>En la empresa, comienzo con la daily</li>
-               <li>Almuerzo</li>
-               <li>Continúo con mis tareas</li>
-          </ul>
+     </div>
 
-          <h1>The figure and figcaption element</h1>
-          <figure><!--marca una foto en un documento-->
-               <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
-               <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption><!--define un título-->
-          </figure>
+     <a href="cosas/pagina2.html">Click aquí para ingresar a Página 2</a><br><br>
+     <!--etiqueta <a> permite crear un enlace a otras páginas de la web-->
+     Haz <a href="https://google.com" target="_blank">Click aquí</a> para ir a <b>Google.</b>
 
-          <h3>Imagen HTML</h3>
-          <p>
+     <h1>LISTAS</h1>
+     <h2>Mi día</h2>
+     <ol type="a">
+          <!--orden en base a letras en orden alfabético-->
+          <li>Me levanto</li>
+          <li>Desayuno</li>
+          <li>Camino al trabajo</li>
+          <li>En la empresa, comienzo con la daily</li>
+          <li>Almuerzo</li>
+          <li>Continúo con mis tareas</li>
+     </ol>
+     <ol type="a" reversed>
+          <!--orden en base a letras pero en orden inverso al alfabético-->
+          <li>Me levanto</li>
+          <li>Desayuno</li>
+          <li>Camino al trabajo</li>
+          <li>En la empresa, comienzo con la daily</li>
+          <li>Almuerzo</li>
+          <li>Continúo con mis tareas</li>
+     </ol>
+     <ol type="a" start="3">
+          <!--orden en base a letras pero comenzando por la letra c-->
+          <li>Me levanto</li>
+          <li>Desayuno</li>
+          <li>Camino al trabajo</li>
+          <li>En la empresa, comienzo con la daily</li>
+          <li>Almuerzo</li>
+          <li>Continúo con mis tareas</li>
+     </ol>
+     <ul>
+          <!--lista no ordenada.-->
+          <li>Me levanto</li>
+          <li>Desayuno</li>
+          <li>Camino al trabajo</li>
+          <li>En la empresa, comienzo con la daily</li>
+          <li>Almuerzo</li>
+          <li>Continúo con mis tareas</li>
+     </ul>
+     <ul style="list-style-type:circle;">
+          <!--lista no ordenada con una viñeta diferente a la predefinida "disc".-->
+          <li>Me levanto</li>
+          <li>Desayuno</li>
+          <li>Camino al trabajo</li>
+          <li>En la empresa, comienzo con la daily</li>
+          <li>Almuerzo</li>
+          <li>Continúo con mis tareas</li>
+     </ul>
+     <ul style="list-style-type:none;">
+          <!--lista no ordenada sin viñeta-->
+          <li>Me levanto</li>
+          <li>Desayuno</li>
+          <li>Camino al trabajo</li>
+          <li>En la empresa, comienzo con la daily</li>
+          <li>Almuerzo</li>
+          <li>Continúo con mis tareas</li>
+     </ul>
+
+     <h1>The figure and figcaption element</h1>
+     <figure>
+          <!--marca una foto en un documento-->
+          <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+          <!--define un título-->
+     </figure>
+
+     <h3>Imagen HTML</h3>
+     <p>
           Aqui va la <b>Imagen</b><br>
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHUH6qkJEHaXdVeaP3fBLMR-GC7r51M9mugA&usqp=CAU"><br>
+          <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHUH6qkJEHaXdVeaP3fBLMR-GC7r51M9mugA&usqp=CAU"><br>
           Aqui va otra pero descargada<br>
-               <img src="gatito.png" alt="Gatitos" title="gatitoooo"><br>
-               <!--SRC: indica la ubicación en la que quieres insertar la imagen.
+          <img src="gatito.png" alt="Gatitos" title="gatitoooo"><br>
+          <!--SRC: indica la ubicación en la que quieres insertar la imagen.
                El atributo ALT proporciona información alternativa para una imagen si un usuario 
                por alguna razón no puede verla.
                El TITLE atributo especifica información extra sobre un elemento. 
                La información generalmente se muestra como un texto de información sobre herramientas 
                cuando el mouse se mueve sobre el elemento.-->
           Ahora un videito<br>
-               <video src="cortometraje.mp4.webm" controls="">
+          <video src="cortometraje.mp4.webm" controls="">
                <!--controls es una etiqueta que no tiene atributo, permite acceder 
                a los controles del video que el navegador permite-->
-               </video>
-          </p><br>
+          </video>
+     </p><br>
 
-          <h2>FORMULARIOS</h2>
-          <form method="post" action="pagina.php"> 
-               <!--El atributo METHOD especifica cómo se van a enviar los datos:
+     <h2>FORMULARIOS</h2>
+     <form method="post" action="pagina.php">
+          <!--El atributo METHOD especifica cómo se van a enviar los datos:
                     "get" - 255 caracteres ó
                     "post" - un montón de información (?
                     ACTION es la dirección de la página que procesa la información-->
-               <p>
-                    <label for="username">Nombre usuario</label>
-                    <input type="text" name="username" required="">
-               </p><br><br>
-               <!--INPUT se utiliza para insertar un campo de texto de una línea,
+          <p>
+               <label for="username">Nombre usuario</label>
+               <input type="text" name="username" required="">
+          </p><br><br>
+          <!--INPUT se utiliza para insertar un campo de texto de una línea,
                NAME es el nombre del formulario
                LABEL indica al usuario de qué se trata
                FOR enlaza la etiqueta label con el campo.-->
-               <p>
-                    <label for="mejora">¿Cómo crees que podría mejorar mi página web?</label><br>
-                    <textarea name="mejora" id="mejora"></textarea>
-               </p><br><br>
-               <!--TEXTAREA crea un campo de texto de líneas múltiples-->
-               <p>
-                    <label for="Name">Click me</label> 
-                    <input type="text" id="Name" name="Name"><br><br>
-                    <!-- o aun mas simple:-->
-                    <label>Click me <input type="text" id="Name" name="Name"/></label>
-               </p>
-
-               <input type="password" required=""> Pass<br><br>
-               <!--los caracteres de la contraseña no se visualizan en la pantalla--> 
-               <input type="number"><br><br>
-               <input type="email" required=""> Email<br><br> 
-               <!--atributo required exige completar el campo antes de enviar el formulario-->
-               <input type="range" min="1" max="10"><br><br>
-               <input type="date"><br><br>
-               <input type="button" value="botoncito"><br><br> <!--botón genérico-->
-               <input type="submit"><br><br> <!--envía los datos-->
-               <textarea readonly=""></textarea><br><br>
-
-               <p> <!--CASILLAS DE VERIFICACIÓN-->
-                    <h3>Marca las bebidas que te gustan</h3>
-                    <input type="checkbox" name="cerveza" id="cerveza" checked/><label for="cerveza"> Cerveza</label><br>
-                    <!--tener una casilla marcada por defecto con el atributo checked-->
-                    <input type="checkbox" name="fernet" id="fernet"/><label for="fernet"> Fernet</label><br>
-                    <input type="checkbox" name="vodka" id="vodka"/><label for="vodka"> Vodka</label><br>
-                    <input type="checkbox"name="agua" id="agua"/><label for="agua"> Agua</label><br>
-               </p>
-               <p> <!--BOTONES DE RADIO, permiten elegir una sola opción-->
-                    <h3>Indica el grupo de edad al que preteneces:</h3>
-                    <input type="radio" name="edad" value="menos15" id="menos15"/><label for="menos15"> Menos de 15 años</label><br>
-                    <input type="radio" name="edad" value="entre15-25" id="entre15-25"/><label for="entre15-25"> Entre 15 y 25 años</label><br>
-                    <input type="radio" name="edad" value="entre25-40" id="entre25-40"/><label for="ntre25-40"> Entre 25 y 40 años</label><br>
-                    <input type="radio" name="edad" value="mas40" id="mas40"/><label for="mas40"> Más de 40 años</label><br>
-                    <!--mismo nombre para cada opción para que el navegador sepa a qué «grupo» pertenece el botón.-->
-               </p>
-               <p> <!--LISTAS DEPLEGABLES-->
-                    <label for="pais"> ¿En qué país vives?</label><br><br>
-                    <select name="pais" id="pais"> <!--especifica el comienzo y el final de la lista desplegable.-->
-                         <option value="eeuu">EEUU</option> <!--una para cada opción posible-->
-                         <option value="china">China</option>
-                         <option value="españa">España</option>
-                         <option value="arg">Argentina</option>
-                         <option value="brasil">Brasil</option>
-                         <option value="mex">México</option>
-                    </select>
-               </p>
-          </form>
-          <header> <!--Un encabezado para un <artículo>. Representa un contenedor 
-                   de contenido introductorio o un conjunto de enlaces de navegación.-->
-               <nav> <!--barra de navegación-->
-                    <a href="https://www.google.com.ar" target="_blank">Google</a> <!--enlace externo-->
-                    <!--atributo target="_blank" abre en otra pestaña-->
-                    <ul>
-                         <li><a href="#tit">Ir al Inicio</a></li> <!--hipervínculo(definir con un nombre la parte de la página a la que queremos enlazar.-->
-                         <li><a href="productos.html">Productos</a></li> <!--enlace interno-->
-                         <li><a href="contacto.html">Contacto</a></li> <!--enlace interno-->
-                    </ul>
-               </nav>
-          </header> <!--Un encabezado para un <artículo>:-->
-          <article> <!--especifica contenido autónomo e independiente-->
-               <section> <!--agrupación temática de contenido-->
-                    <h3>Titulo principal</h3>
-                    <h1>Titulo Secundario</h1>
-                    <p>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                         consequat.
-                    </p>
-               </section>
-          </article>
           <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               lore.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               lore.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
-               lore.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat.
+               <label for="mejora">¿Cómo crees que podría mejorar mi página web?</label><br>
+               <textarea name="mejora" id="mejora"></textarea>
+          </p><br><br>
+          <!--TEXTAREA crea un campo de texto de líneas múltiples-->
+          <p>
+               <label for="Name">Click me</label>
+               <input type="text" id="Name" name="Name"><br><br>
+               <!-- o aun mas simple:-->
+               <label>Click me <input type="text" id="Name" name="Name" /></label>
           </p>
-          <center> <!--CENTER Alinea el texto al centro. (Recomendable hacerlo con CSS)-->
-               <table>
-                    <!--Las tablas se crean fila por fila, en cada fila se especifican los contenidos de las celdas-->
-                    <caption> Título de la tabla</caption>
-                    <tr>
-                         <!--FILA DE ENCABEZADO-->
-                         <th>
-                              <center><b>Nombre</b></center>
-                         </th>
-                         <th><b>Apellido</b></th>
-                         <th><b>Canal</b></th>
-                         <th><b>Seguidores</b></th>
-                    </tr>
-                    <tr>
-                         <!--FILA SIGUIENTE-->
-                         <td>Lucas</td>
-                         <!--CELDA-->
-                         <td>Dalto</td>
-                         <!--CELDA DE LA SIGUIENTE COLUMNA-->
-                         <td>Soy Dalto</td>
-                         <td>300.000</td>
-                    </tr>
-                    <tr>
-                         <td>Juan</td>
-                         <td>Villalvazo</td>
-                         <td>Juan Villalvazo</td>
-                         <td>100.000</td>
-                    </tr>
-                    <tr>
-                         <td>Jorge</td>
-                         <td>Villalobos</td>
-                         <td>Latincoder</td>
-                         <td>120.000</td>
-                    </tr>
-               </table><br>
-          
+
+          <input type="password" required=""> Pass<br><br>
+          <!--los caracteres de la contraseña no se visualizan en la pantalla-->
+          <input type="number"><br><br>
+          <input type="email" required=""> Email<br><br>
+          <!--atributo required exige completar el campo antes de enviar el formulario-->
+          <input type="range" min="1" max="10"><br><br>
+          <input type="date"><br><br>
+          <input type="button" value="botoncito"><br><br>
+          <!--botón genérico-->
+          <input type="submit"><br><br>
+          <!--envía los datos-->
+          <textarea readonly=""></textarea><br><br>
+
+          <p>
+               <!--CASILLAS DE VERIFICACIÓN-->
+          <h3>Marca las bebidas que te gustan</h3>
+          <input type="checkbox" name="cerveza" id="cerveza" checked /><label for="cerveza"> Cerveza</label><br>
+          <!--tener una casilla marcada por defecto con el atributo checked-->
+          <input type="checkbox" name="fernet" id="fernet" /><label for="fernet"> Fernet</label><br>
+          <input type="checkbox" name="vodka" id="vodka" /><label for="vodka"> Vodka</label><br>
+          <input type="checkbox" name="agua" id="agua" /><label for="agua"> Agua</label><br>
+          </p>
+          <p>
+               <!--BOTONES DE RADIO, permiten elegir una sola opción-->
+          <h3>Indica el grupo de edad al que preteneces:</h3>
+          <input type="radio" name="edad" value="menos15" id="menos15" /><label for="menos15"> Menos de 15
+               años</label><br>
+          <input type="radio" name="edad" value="entre15-25" id="entre15-25" /><label for="entre15-25"> Entre 15 y 25
+               años</label><br>
+          <input type="radio" name="edad" value="entre25-40" id="entre25-40" /><label for="ntre25-40"> Entre 25 y 40
+               años</label><br>
+          <input type="radio" name="edad" value="mas40" id="mas40" /><label for="mas40"> Más de 40 años</label><br>
+          <!--mismo nombre para cada opción para que el navegador sepa a qué «grupo» pertenece el botón.-->
+          </p>
+          <p>
+               <!--LISTAS DEPLEGABLES-->
+               <label for="pais"> ¿En qué país vives?</label><br><br>
+               <select name="pais" id="pais">
+                    <!--especifica el comienzo y el final de la lista desplegable.-->
+                    <option value="eeuu">EEUU</option>
+                    <!--una para cada opción posible-->
+                    <option value="china">China</option>
+                    <option value="españa">España</option>
+                    <option value="arg">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="mex">México</option>
+               </select>
+          </p>
+     </form>
+     <header>
+          <!--Un encabezado para un <artículo>. Representa un contenedor 
+                   de contenido introductorio o un conjunto de enlaces de navegación.-->
+          <nav>
+               <!--barra de navegación-->
+               <a href="https://www.google.com.ar" target="_blank">Google</a>
+               <!--enlace externo-->
+               <!--atributo target="_blank" abre en otra pestaña-->
+               <ul>
+                    <li><a href="#tit">Ir al Inicio</a></li>
+                    <!--hipervínculo(definir con un nombre la parte de la página a la que queremos enlazar.-->
+                    <li><a href="productos.html">Productos</a></li>
+                    <!--enlace interno-->
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <!--enlace interno-->
+               </ul>
+          </nav>
+     </header>
+     <!--Un encabezado para un <artículo>:-->
+     <article>
+          <!--especifica contenido autónomo e independiente-->
+          <section>
+               <!--agrupación temática de contenido-->
+               <h3>Titulo principal</h3>
+               <h1>Titulo Secundario</h1>
+               <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+               </p>
+          </section>
+     </article>
+     <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+          lore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+          lore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+          lore.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+     </p>
+     <center>
+          <!--CENTER Alinea el texto al centro. (Recomendable hacerlo con CSS)-->
+          <table>
+               <!--Las tablas se crean fila por fila, en cada fila se especifican los contenidos de las celdas-->
+               <caption> Título de la tabla</caption>
+               <tr>
+                    <!--FILA DE ENCABEZADO-->
+                    <th>
+                         <center><b>Nombre</b></center>
+                    </th>
+                    <th><b>Apellido</b></th>
+                    <th><b>Canal</b></th>
+                    <th><b>Seguidores</b></th>
+               </tr>
+               <tr>
+                    <!--FILA SIGUIENTE-->
+                    <td>Lucas</td>
+                    <!--CELDA-->
+                    <td>Dalto</td>
+                    <!--CELDA DE LA SIGUIENTE COLUMNA-->
+                    <td>Soy Dalto</td>
+                    <td>300.000</td>
+               </tr>
+               <tr>
+                    <td>Juan</td>
+                    <td>Villalvazo</td>
+                    <td>Juan Villalvazo</td>
+                    <td>100.000</td>
+               </tr>
+               <tr>
+                    <td>Jorge</td>
+                    <td>Villalobos</td>
+                    <td>Latincoder</td>
+                    <td>120.000</td>
+               </tr>
+          </table><br>
+
           <!--Si la tabla es grande, la dividimos en 3 partes con las siguientes etiquetas: 
           <thead></thead> (el encabezado),
           <tfoot></tfoot> (el pie de la tabla, se copian los encabezados),
@@ -288,21 +326,24 @@
 
           <!--Pueden combinarse celdas HORIZONTALMENTE mediante los atributos COLSPAN o VERTICALMENTE con ROWSPAN,
           tiene que especificarse cuantas celdas se van a combinar-->
-          </center>
+     </center>
 
-          <aside> <!--Muestra algún contenido aparte del contenido en el que se encuentra-->
-               <h2>Contenido extra</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-          </aside>
-          <footer> <!--pié de página-->
-               <center>
-                    <h4>Copyright - Todos los derechos reservados</h4>
-               </center>
-          </footer>
-          
-          <script src="script_base.js"></script>
-     </body> 
+     <aside>
+          <!--Muestra algún contenido aparte del contenido en el que se encuentra-->
+          <h2>Contenido extra</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat.</p>
+     </aside>
+     <footer>
+          <!--pié de página-->
+          <center>
+               <h4>Copyright - Todos los derechos reservados</h4>
+          </center>
+     </footer>
+
+     <script src="script_base.js"></script>
+</body>
+
 </html>
