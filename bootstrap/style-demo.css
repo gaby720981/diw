@@ -1,0 +1,7 @@
+.row>.col, .bd-example-row .row>[class^="col-"] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgb(228, 227, 233);
+    border: 1px solid rgba(39,41,43,0.1);
+ 
+}
