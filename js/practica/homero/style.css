@@ -6,11 +6,11 @@ body {
   background-color: #FFD90F;
   color: #000000;
   font-family: 'Simpsonfont', sans-serif;
+  margin: 0;
 }
 
 .wrapper {
   position: relative;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -28,8 +28,8 @@ body {
 }
 
 img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 60%;
+  max-height: 60%;
 }
 
 
@@ -57,31 +57,17 @@ img {
   color: #FFD90F;
 }
 
-
-nav {
-  background-color: #FFD90F;
-  padding: 0px;
-  margin: 0px;
-  
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0px;
-}
-
-nav li {
-  margin: 0 40px;
-}
-
-nav a, .btn-up,
+.btn-up,
 .btn-down {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+}
+
+
+nav img {
+  width: 200px;
 }
 
 
