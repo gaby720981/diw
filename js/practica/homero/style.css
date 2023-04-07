@@ -88,8 +88,10 @@ nav img {
     max-height: 95%;
   }
 }
-
-
+footer {
+  margin-top: 50px;
+  font-size: 10px;
+}
 
 
 
