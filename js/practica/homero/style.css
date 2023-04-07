@@ -14,8 +14,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh; /* establecemos la altura al 80% del alto de la ventana */
-  width: 70%; /* establecemos el ancho al 80% del ancho de la ventana */
+  height: auto;
+  width: 90vw; /* establecemos el ancho al 90% del ancho de la ventana */
   margin: 0 auto; /* centramos el contenedor horizontalmente */
   max-width: 1200px; /* establecemos el ancho máximo */
 }
@@ -30,6 +30,8 @@ body {
 img {
   max-width: 60%;
   max-height: 60%;
+  width: 100%; /* asegura que la imagen no se desborde del contenedor */
+  margin: 10px; /* agrega un margen alrededor de la imagen */
 }
 
 
@@ -67,8 +69,27 @@ img {
 
 
 nav img {
-  width: 200px;
+  width: 50%; /* establece el ancho al 50% del ancho del contenedor padre */
+  max-width: 200px; /* establece un ancho máximo para evitar desbordamiento */
+  height: auto;
+  margin: 10px; /* agrega un margen alrededor de la imagen */
 }
+
+@media screen and (max-width: 768px) {
+  /* para pantallas más pequeñas, ajusta el ancho del contenedor y el tamaño de fuente */
+  .wrapper {
+    width: 95vw;
+    font-size: 14px;
+  }
+
+  /* para pantallas más pequeñas, ajusta el tamaño de la imagen en el contenedor */
+  img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+}
+
+
 
 
 
