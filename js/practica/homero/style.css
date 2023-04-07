@@ -84,8 +84,8 @@ nav img {
 
   /* para pantallas más pequeñas, ajusta el tamaño de la imagen en el contenedor */
   img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 50%;
+    max-height: 95%;
   }
 }
 
