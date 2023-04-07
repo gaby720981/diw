@@ -1,10 +1,12 @@
 var canvas = document.getElementById("myCanvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 var ctx = canvas.getContext("2d");
 var x = canvas.width / 2;
 var y = canvas.height - 30;
 var dx = 2;
 var dy = -2;
-var ballRadius = 10;
+var ballRadius = 30; // triple de tamaño
 
 function drawBall() {
   ctx.beginPath();
@@ -27,4 +29,6 @@ function draw() {
   }
 }
 
-setInterval(draw, 10);
+setInterval(draw, 5);
+
+

@@ -1,0 +1,160 @@
+/* Estilos generales */
+
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Encabezado */
+
+header {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	z-index: 1;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li:first-child {
+	margin-left: 0;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li a {
+	font-size: 18px;
+}
+
+/* Presentación */
+
+.presentacion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #333;
+	color: #fff;
+}
+
+.texto-presentacion {
+	max-width: 600px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.texto-presentacion h1 {
+	font-size: 48px;
+	margin-bottom: 10px;
+}
+
+.texto-presentacion h1 span {
+	color: #fcd307;
+}
+
+.texto-presentacion p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.boton {
+	background-color: #fcd307;
+	color: #333;
+	font-size: 16px;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.boton:hover {
+	background-color: #e1ba06;
+	cursor: pointer;
+}
+
+.imagen-presentacion img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+/* Habilidades */
+
+.habilidades {
+	background-color: #fff;
+	padding: 50px;
+	text-align: center;
+}
+
+.habilidades h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.habilidades ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.habilidades li {
+	background-color: #fcd307;
+	color: #333;
+	font-size: 18px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+/* Pie de página */
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}

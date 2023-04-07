@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dreamers</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Dreamers</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="destacados">
+        <h2>Productos destacados</h2>
+        <div class="producto">
+          <img src="carpa.jpg" alt="Carpa para niños">
+          <h3>Carpa para niños</h3>
+          <p class="descripcion">Perfecta para una noche de campamento en casa</p>
+          <p class="precio">$50.00</p>
+        </div>
+        <div class="producto">
+          <img src="pijama.jpg" alt="Pijama para niños">
+          <h3>Pijama para niños</h3>
+          <p class="descripcion">Suaves y cómodas para una noche de sueño perfecta</p>
+          <p class="precio">$25.00</p>
+        </div>
+        <div class="producto">
+          <img src="juguete.jpg" alt="Juguete para niños">
+          <h3>Juguete para niños</h3>
+          <p class="descripcion">Horas de diversión garantizada</p>
+          <p class="precio">$10.00</p>
+        </div>
+      </section>
+
+      <section class="formulario">
+        <h2>Contacto</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Dreamers</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

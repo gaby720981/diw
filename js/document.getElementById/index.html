@@ -1,0 +1,39 @@
+<!--El siguiente ejemplo "encuentra" un elemento HTML ( con id = "demo" ), 
+y cambia el contenido del elemento ( innerHTML ) a "Hola JavaScript":-->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+
+    <h1 id="titulo">Bienvenidos a mi página web</h1>
+
+
+    <button onclick="cambiarContenido()">Haz clic aquí</button><br><br>
+
+
+    <script>
+        function cambiarContenido() {
+            document.getElementById("titulo").innerHTML = "¡Gracias por visitar mi sitio web!";
+        }
+    </script>
+
+
+
+
+    <img id="myImage" src="img/camaabajo.jpg" style="width:300px"><br>
+
+    <button onclick="document.getElementById('myImage').src='img/camaarriba.jpg'">CAMA ARRIBA</button>
+    <button onclick="document.getElementById('myImage').src='img/camaabajo.jpg'">CAMA ABAJO</button>
+
+
+</body>
+
+</html>
