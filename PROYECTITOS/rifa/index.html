@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Tabla de números</title>
+  </head>
+  <body>
+    <br />
+    <div class="tabla-container">
+      <form>
+        <label for="numero">Ingrese un número:</label>
+        <input type="number" id="numero" name="numero" min = "0" max="99"placeholder="00" />
+        <br />
+        <label for="estado">Seleccione el estado:</label>
+        <select id="estado" name="estado">
+          <option value="vendido">Vendido</option>
+          <option value="reservado">Reservado</option>
+        </select>
+        <br />
+        <button type="button" onclick="cambiarEstado()">Cambiar estado</button>
+      </form>
+      <table id="tabla">
+        <tr>
+          <td data-numero="00" class="estado">00</td>
+          <td data-numero="01" class="estado">01</td>
+          <td data-numero="02" class="estado">02</td>
+          <td data-numero="03" class="estado">03</td>
+          <td data-numero="04" class="estado">04</td>
+          <td data-numero="05" class="estado">05</td>
+          <td data-numero="06" class="estado">06</td>
+          <td data-numero="07" class="estado">07</td>
+          <td data-numero="08" class="estado">08</td>
+          <td data-numero="09" class="estado">09</td>
+        </tr>
+        <tr>
+          <td data-numero="10" class="estado">10</td>
+          <td data-numero="11" class="estado">11</td>
+          <td data-numero="12" class="estado">12</td>
+          <td data-numero="13" class="estado">13</td>
+          <td data-numero="14" class="estado">14</td>
+          <td data-numero="15" class="estado">15</td>
+          <td data-numero="16" class="estado">16</td>
+          <td data-numero="17" class="estado">17</td>
+          <td data-numero="18" class="estado">18</td>
+          <td data-numero="19" class="estado">19</td>
+        </tr>
+        <tr>
+          <td data-numero="20" class="estado">20</td>
+          <td data-numero="21" class="estado">21</td>
+          <td data-numero="22" class="estado">22</td>
+          <td data-numero="23" class="estado">23</td>
+          <td data-numero="24" class="estado">24</td>
+          <td data-numero="25" class="estado">25</td>
+          <td data-numero="26" class="estado">26</td>
+          <td data-numero="27" class="estado">27</td>
+          <td data-numero="28" class="estado">28</td>
+          <td data-numero="29" class="estado">29</td>
+        </tr>
+        <tr>
+          <td data-numero="30" class="estado">30</td>
+          <td data-numero="31" class="estado">31</td>
+          <td data-numero="32" class="estado">32</td>
+          <td data-numero="33" class="estado">33</td>
+          <td data-numero="34" class="estado">34</td>
+          <td data-numero="35" class="estado">35</td>
+          <td data-numero="36" class="estado">36</td>
+          <td data-numero="37" class="estado">37</td>
+          <td data-numero="38" class="estado">38</td>
+          <td data-numero="39" class="estado">39</td>
+        </tr>
+        <tr>
+          <td data-numero="40" class="estado">40</td>
+          <td data-numero="41" class="estado">41</td>
+          <td data-numero="42" class="estado">42</td>
+          <td data-numero="43" class="estado">43</td>
+          <td data-numero="44" class="estado">44</td>
+          <td data-numero="45" class="estado">45</td>
+          <td data-numero="46" class="estado">46</td>
+          <td data-numero="47" class="estado">47</td>
+          <td data-numero="48" class="estado">48</td>
+          <td data-numero="49" class="estado">49</td>
+        </tr>
+        <tr>
+          <td data-numero="50" class="estado">50</td>
+          <td data-numero="51" class="estado">51</td>
+          <td data-numero="52" class="estado">52</td>
+          <td data-numero="53" class="estado">53</td>
+          <td data-numero="54" class="estado">54</td>
+          <td data-numero="55" class="estado">55</td>
+          <td data-numero="56" class="estado">56</td>
+          <td data-numero="57" class="estado">57</td>
+          <td data-numero="58" class="estado">58</td>
+          <td data-numero="59" class="estado">59</td>
+        </tr>
+        <tr>
+          <td data-numero="60" class="estado">60</td>
+          <td data-numero="61" class="estado">61</td>
+          <td data-numero="62" class="estado">62</td>
+          <td data-numero="63" class="estado">63</td>
+          <td data-numero="64" class="estado">64</td>
+          <td data-numero="65" class="estado">65</td>
+          <td data-numero="66" class="estado">66</td>
+          <td data-numero="67" class="estado">67</td>
+          <td data-numero="68" class="estado">68</td>
+          <td data-numero="69" class="estado">69</td>
+        </tr>
+        <tr>
+          <td data-numero="70" class="estado">70</td>
+          <td data-numero="71" class="estado">71</td>
+          <td data-numero="72" class="estado">72</td>
+          <td data-numero="73" class="estado">73</td>
+          <td data-numero="74" class="estado">74</td>
+          <td data-numero="75" class="estado">75</td>
+          <td data-numero="76" class="estado">76</td>
+          <td data-numero="77" class="estado">77</td>
+          <td data-numero="78" class="estado">78</td>
+          <td data-numero="79" class="estado">79</td>
+        </tr>
+        <tr>
+          <td data-numero="80" class="estado">80</td>
+          <td data-numero="81" class="estado">81</td>
+          <td data-numero="82" class="estado">82</td>
+          <td data-numero="83" class="estado">83</td>
+          <td data-numero="84" class="estado">84</td>
+          <td data-numero="85" class="estado">85</td>
+          <td data-numero="86" class="estado">86</td>
+          <td data-numero="87" class="estado">87</td>
+          <td data-numero="88" class="estado">88</td>
+          <td data-numero="89" class="estado">89</td>
+        </tr>
+        <tr>
+          <td data-numero="90" class="estado">90</td>
+          <td data-numero="91" class="estado">91</td>
+          <td data-numero="92" class="estado">92</td>
+          <td data-numero="93" class="estado">93</td>
+          <td data-numero="94" class="estado">94</td>
+          <td data-numero="95" class="estado">95</td>
+          <td data-numero="96" class="estado">96</td>
+          <td data-numero="97" class="estado">97</td>
+          <td data-numero="98" class="estado">98</td>
+          <td data-numero="99" class="estado">99</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <button id="reset-button">Limpiar todo</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

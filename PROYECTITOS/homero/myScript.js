@@ -1,6 +1,4 @@
 
-
-
 function cambiarimg() {
     const img = document.getElementById('img') ;
     const src = img.src ;
