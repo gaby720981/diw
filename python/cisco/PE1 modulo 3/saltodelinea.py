@@ -1,0 +1,1 @@
+print ('Elija una opción de vehículo: \n1. Auto \n2. Bici \n3. Moto \n4. Avión')
