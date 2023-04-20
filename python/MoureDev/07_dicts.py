@@ -3,6 +3,9 @@
 ### Dictionaries ###
 
 # Definición
+#Es una estructura de datos que permite almacenar pares de clave-valor, 
+#donde cada clave es única dentro del diccionario 
+#y se utiliza para acceder a su valor correspondiente de manera eficiente.
 
 my_dict = dict()
 my_other_dict = {}
@@ -51,8 +54,8 @@ print(my_dict)
 
 # Otras operaciones
 
-print(my_dict.items())
-print(my_dict.keys())
+print(my_dict.items()) #para iterar
+print(my_dict.keys()) #devuelve las claves
 print(my_dict.values())
 
 my_list = ["Nombre", 1, "Piso"]
