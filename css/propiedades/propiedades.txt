@@ -1,0 +1,86 @@
+/* Selector de elementos */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Selector de clase */
+.mensaje {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px;
+}
+
+/* Selector de ID */
+#titulo {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Margen y relleno */
+.box {
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Fondo y color de texto */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Fuente y tipo de letra */
+h1 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* Ancho y alto */
+.imagen {
+  width: 100%;
+  height: auto;
+}
+
+/* Borde */
+.botón {
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+/* Posición */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+
+Selector de elementos: se utiliza para aplicar estilos a todos los elementos que coincidan con el nombre del selector. 
+En el ejemplo, todos los párrafos tendrán un tamaño de fuente de 16 píxeles y una altura de línea de 1,5.
+
+Selector de clase: se utiliza para aplicar estilos a los elementos que tengan una clase específica. 
+En el ejemplo, todos los elementos con la clase "mensaje" tendrán un fondo gris claro, texto negro y un relleno de 10 píxeles.
+
+Selector de ID: se utiliza para aplicar estilos a un elemento específico que tenga un ID específico. 
+En el ejemplo, el elemento con el ID "titulo" tendrá un tamaño de fuente de 24 píxeles y un texto centrado.
+
+Margen y relleno: se utilizan para establecer el espacio entre los bordes de un elemento y su contenido. 
+En el ejemplo, todos los elementos con la clase "box" tendrán un margen de 10 píxeles y un relleno de 20 píxeles.
+
+Fondo y color de texto: se utilizan para establecer el color de fondo y el color de texto de un elemento. 
+En el ejemplo, el fondo de la página será blanco y el texto será negro.
+
+Fuente y tipo de letra: se utilizan para establecer el tipo de fuente y la familia de fuentes de un elemento. 
+En el ejemplo, el título se mostrará en negrita y utilizará la fuente Arial o una fuente sans-serif si Arial no está disponible.
+
+Ancho y alto: se utilizan para establecer el ancho y la altura de un elemento. 
+En el ejemplo, la imagen se ajustará al ancho de su contenedor y tendrá una altura automática para mantener su proporción de aspecto.
+
+Borde: se utiliza para establecer el estilo, el ancho y el radio de borde de un elemento. 
+En el ejemplo, el botón tendrá un borde sólido de 2 píxeles de ancho y un radio de borde de 5 píxeles.
+
+Posición: se utiliza para establecer la posición de un elemento en relación con su contenedor.
