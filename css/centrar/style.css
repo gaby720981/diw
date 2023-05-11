@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 18, 16);
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+}
+
+/*display: flex;
+El elemento se comporta como un elemento de bloque 
+y establece su contenido de acuerdo con el modelo de flexbox.
+
+justify-content: center; centra img horizontalmente
+
+align-items: center; centra img de manera vertical
+
+margin: 0 auto; establece un margen superior e inferior de 0 
+y un margen izquierdo y derecho automático, 
+lo que centra horizontalmente el contenedor en la página. 
+*/
