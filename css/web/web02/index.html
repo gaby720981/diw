@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Invitación a la boda de Ana y Juan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Invitación a nuestra boda</h1>
+    </header>
+
+    <main>
+        <h2>La boda</h2>
+        <p>Estamos muy felices de invitarte a nuestra boda, que se celebrará el sábado 30 de septiembre a las 5pm en la iglesia de San José.</p>
+
+        <h2>La recepción</h2>
+        <p>Después de la ceremonia, nos encantaría que nos acompañaras en la recepción que se celebrará en el jardín de eventos Los Robles, donde disfrutaremos de una cena y música en vivo.</p>
+
+        <h2>Confirma tu asistencia</h2>
+        <p>Por favor, confirma tu asistencia antes del 1 de septiembre completando el siguiente formulario:</p>
+        <form action="confirmar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="asistencia">¿Asistirás?</label>
+            <select id="asistencia" name="asistencia" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Si">Sí, asistiré</option>
+                <option value="No">No, no podré asistir</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Invitación de Ana y Juan</p>
+    </footer>
+</body>
+</html>

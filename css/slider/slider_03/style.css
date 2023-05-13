@@ -1,0 +1,46 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  .carousel-prev {
+    left: 0;
+  }
+  
+  .carousel-next {
+    right: 0;
+  }
+  
+  /* Transiciones de animación */
+  .carousel-slide {
+    transition: transform 0.5s ease;
+  }
+  
+  /* Para ocultar el botón de previo al inicio del carrusel */
+  .carousel-prev.disabled {
+    display: none;
+  }
+  

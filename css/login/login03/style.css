@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para el formulario de inicio de sesión */
+  .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  form {
+    width: 400px;
+    padding: 50px;
+    background-color: #1a2859;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  h1 {
+    margin: 0 0 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #1a2859;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos adicionales para un aspecto profesional */
+  .login-form {
+    border-top: 8px solid #1a2859;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    border: 1px solid #1a2859;
+  }
+  
+  button[type="submit"] {
+    border: 1px solid #1a2859;
+  }
+  
+  

@@ -1,0 +1,104 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  form:hover {
+    transform: translateY(-10px);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-field {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #333;
+  }
+  
+  label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #666;
+    transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
+    pointer-events: none;
+  }
+  
+  input[type="text"]:focus + label,
+  input[type="password"]:focus + label {
+    transform: translateY(-30px);
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #222;
+    transform: translateY(-2px);
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  @media (min-width: 768px) {
+    form {
+      width: 400px;
+    }
+  }
+  
