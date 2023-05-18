@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './components/register/register.component';
+import { RegisterComponent } from './register/register.component';
+import { EmpleadosComponent } from './empleados/empleados.component';
+import { EmpleadoComponent } from './empleado/empleado.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
-@NgModule({
+@NgModule({ //aqui deben estar declarados todos los componentes
   declarations: [
     AppComponent,
-    RegisterComponent
+    RegisterComponent,
+    EmpleadosComponent,
+    EmpleadoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
