@@ -1,0 +1,71 @@
+DOCUMENTACIÓN:
+
+https://developer.mozilla.org/es/docs/Web/CSS
+
+https://www.w3schools.com/css/
+
+https://cssreference.io/
+
+Herramientas CSS:
+
+CSS Gradient: https://cssgradient.io/
+CSS Layout: https://csslayout.io/
+Getwaves: https://getwaves.io/
+WebGradients: https://webgradients.com/
+Cubic-bezier: https://cubic-bezier.com/#.17,.67,.83,.67
+CSS3: https://www.css3.me/
+CSS-Minifier: https://cssminifier.com/
+Generador de CSS neumórfico: https://neumorphism.io/#55b9f3
+
+🎨 | https://colorpalettes.net/
+🎨 | https://coolors.co/
+🎨 | https://poolors.com/#
+🎨 | https://www.0to255.com/
+🎨 | https://flatuicolors.com/
+🎨 | https://uigradients.com/#DirtyFog
+🎨 | https://colorme.io/
+🎨 | https://colours.neilorangepeel.com/
+🎨 | https://color.adobe.com/es/create/color-wheel
+
+
+
+https://bulma.io/
+
+https://www.heksagon.net/web-design/how-to-create-a-resume-website-using-bulma-css/
+
+https://animate.style/
+https://animista.net/
+
+https://materializecss.com/
+https://getuikit.com/
+
+https://tailwindcss.com/
+
+
+
+Cursor:  https://www.w3schools.com/cssref/tryi...
+Font Awesome: https://kit.fontawesome.com/62ea397d3...
+Transform: https://www.w3schools.com/cssref/css3...
+Códigos de Colores: https://htmlcolorcodes.com/es/
+Generador de Cubic Bezier: https://cubic-bezier.com/#.17,.67,.83 ...
+Generador de Clip Path: https://bennettfeely.com/clippy/
+Generador de Box-Shadows: https://www.cssmatic.com/es/box-shadow
+Selectores: https://www.w3schools.com/cssref/css_...
+
+Generadores de codigo:
+
+https://www.justinmind.com/ui-design/neumorphism
+
+https://neumorphism.io/#55b9f3
+
+https://hype4.academy/tools/glassmorphism-generator
+
+https://9elements.github.io/fancy-border-radius/
+
+https://waitanimate.wstone.uk/
+
+https://www.css3buttongenerator.com/
+
+http://csstypeset.com/
+
+http://css3generator.com/

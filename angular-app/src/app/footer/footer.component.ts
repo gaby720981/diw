@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
 
   selector: 'app-footer',
   template: "<p>2023 © copyright  CapacIT - Argentina</p>",
-  styles: [ 
-    "p{text-align: center; background:  #FFFFFF; padding: 2.5em; font-size: 0.813em; margin: 1.25em; position: absolute; bottom: 0; width: 100%;}", 
-  ] 
+  styles: [
+    "p{text-align: center; padding: 2em; margin: 1em; position: absolute; bottom: 0; width: 90%;}",
+  ]
 
 })   //estilos inline
 

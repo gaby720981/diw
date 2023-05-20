@@ -1,0 +1,16 @@
+DOCUMENTACIÓN:
+
+https://www.w3schools.com/TAGS/default.asp
+
+https://developer.mozilla.org/es/docs/Web/HTML
+
+https://htmlreference.io/
+
+Herramientas HTML:
+
+HTML-minifier: https://html-minifier.com/
+HTML ColorCode: https://htmlcolorcodes.com/es/
+W3schools: https://www.w3schools.com/
+
+Patrones de password:
+https://social.msdn.microsoft.com/Forums/es-ES/e3d7d51d-785c-44e6-b849-20018cd4b581/expresin-regular-para-una-contrasea-ultrasegura?forum=vcses

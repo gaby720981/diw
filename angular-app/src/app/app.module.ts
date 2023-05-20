@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { EmpleadoComponent } from './empleado/empleado.component';
 import { FooterComponent } from './footer/footer.component';
+import { EmpleadosService } from './services/empleados.service';
 
 
 
@@ -22,7 +23,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [EmpleadosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

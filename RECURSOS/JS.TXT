@@ -1,0 +1,57 @@
+DOCUMENTACIÓN:
+
+https://developer.mozilla.org/es/docs/Web/JavaScript
+
+https://www.w3schools.com/js/js_intro.asp
+
+https://es.javascript.info/
+
+BIBLIOTECAS:
+
+https://scrollmagic.io/  ScrollMagic: Es una biblioteca de JavaScript que permite crear efectos de animación y transición en la página web en función de la posición del usuario en la página.
+
+https://scrollrevealjs.org/  ScrollReveal: Es otra biblioteca de JavaScript que permite crear efectos de animación y transición en la página web a medida que el usuario se desplaza hacia abajo en la página.
+
+https://maxwellito.github.io/vivus/  Vivus.js: Es una biblioteca de JavaScript que permite crear animaciones de líneas vectoriales y gráficos en SVG de forma animada.
+
+https://michalsnik.github.io/aos/  AOS: Es otra biblioteca de JavaScript que permite agregar efectos de animación a los elementos a medida que el usuario se desplaza hacia abajo en la página.
+
+
+
+Otros recursos:
+
+https://www.patterns.dev/
+
+
+
+Practicar:
+
+1- https://www.w3schools.com/js/js_exercises.asp
+
+2- https://practity.com/582-2/
+
+3- https://exercism.org/tracks/javascript/exercises
+
+4- https://www.java5cript.com/code-challenges
+
+5- https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/typed-arrays
+
+6- https://coderbyte.com/challenges
+
+7- https://leetcode.com/problemset/all/
+
+8- https://edabit.com/challenges
+
+9- https://www.codewars.com/kata/latest/my-languages
+
+10- https://www.hackerrank.com/dashboard
+
+11- https://codeforces.com/problemset?f0a28=1
+
+12- https://www.jschallenger.com/
+
+13- https://www.w3resource.com/javascript-exercises/
+
+14- https://www.javascript.com/try
+
+15- https://www.topcoder.com/challenges?tracks%5BDS%5D=true&tracks%5BDes%5D=true&tracks%5BDev%5D=true&tracks%5BQA%5D=true&types%5B%5D=CH&types%5B%5D=F2F&types%5B%5D=TSK

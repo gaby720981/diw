@@ -1,0 +1,285 @@
+Buscador con IA:
+
+https://www.phind.com/
+
+Mapa de ruta:
+
+https://roadmap.sh/
+
+
+https://andreasbm.github.io/web-skills/?compact
+
+https://www.bing.com/new
+
+https://recursoscosmicos.com/
+
+https://github.com/sindresorhus/awesome
+
+https://trends.google.com/trends/?geo=US
+
+https://learn.microsoft.com/es-es/microsoft-edge/devtools-guide-chromium/console/#interact-with-the-current-webpage-in-the-browser
+
+https://www.tokioschool.com/noticias/etiquetas-obsoletas-html5/
+
+https://htmlcolorcodes.com/es/
+
+https://www.w3schools.in/
+
+https://jupyter.org/
+
+https://colab.research.google.com/?hl=es#scrollTo=UdRyKR44dcNI
+
+https://getbootstrap.com/
+
+https://caniuse.com/
+
+https://flexboxfroggy.com/
+
+https://codepip.com/games/grid-garden/
+
+https://genial.ly/es/
+
+https://hermandadblanca.org/colores-hexadecimal-rgb-paginas-web-html/
+
+https://codeaddict.io/
+
+https://fonts.google.com/
+
+https://mumukiresuelto.github.io/completo/
+
+https://theinspirationgrid.com/category/design/
+
+https://www.hackerrank.com/dashboard
+
+https://spring.io/projects/spring-boot
+
+https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html
+
+https://www.jetbrains.com/academy/
+
+https://projecteuler.net/archives
+
+https://www.codewars.com/
+
+https://www.sololearn.com/home
+
+https://www.codingame.com/start
+
+https://drive.google.com/drive/u/0/folders/1hdSylyYGvshO7SLYz7y5ZbYEo67WKFB3
+
+https://www.freepik.es/fotos-vectores-gratis/fondos-para-paginas-web
+
+https://www.w3.org/
+
+https://htmlcheatsheet.com/
+
+https://drive.google.com/drive/u/0/folders/1NuwRysF8fj8ZlpWQ3tx5HjMZ2LqnSAQL
+
+https://www.copy.ai/
+
+https://rytr.me/
+
+https://www.microcopy.me/
+
+https://answerthepublic.com/
+
+https://www.title-generator.com/
+
+https://unsplash.com/es/images
+
+https://www.pexels.com/es-es/
+
+https://pixabay.com/
+
+https://the-algorithms.com/es
+
+https://aicsvirtual.org/
+
+https://www.geeksforgeeks.org/
+
+https://www.behance.net/gallery/150952847/CuidaPet-Trabajo-integrador-Diplo-UX
+
+https://nic.ar/
+
+https://jsfiddle.net/
+
+https://glitch.com/
+
+https://democreator.wondershare.com/
+
+https://pixelsconverter.com/px-to-em
+
+https://pagespeed.web.dev/
+
+https://archive.org/
+
+
+
+Herramientas e Imágenes Alta resolución:
+
+Freepik: https://www.freepik.es/
+
+Pexels: https://www.pexels.com/es-es/
+
+MotionArray: https://motionarray.com/
+
+UnDraw: https://undraw.co/
+
+UnSplash: https://unsplash.com/
+
+FreeImages: https://www.freeimages.com/es
+
+Pixabay: https://pixabay.com/es/
+
+Thenounproject: https://thenounproject.com/
+
+Tinypng: https://tinypng.com/
+
+Manypixels: https://www.manypixels.co/
+
+Humaans: https://www.humaaans.com/
+
+Uigradients: https://uigradients.com/#CocoaaIce
+
+Flaticon: https://www.flaticon.es/
+
+Boxicons: https://boxicons.com/
+
+
+
+Herramientas FrontEnd:
+
+Codepen: https://codepen.io/
+
+Modernizr: https://modernizr.com/
+
+BrowserShots: https://browsershots.org/
+
+CDNJS: https://cdnjs.com/
+
+Waybackmachine: https://archive.org/web/
+
+Dummyimage: https://dummyimage.com/
+
+Colorzilla: https://www.colorzilla.com/
+
+Caniuse: https://caniuse.com/
+
+Spritecow: http://www.spritecow.com/
+
+Figma: https://www.figma.com/
+
+JavasScript-minifier: https://www.minifier.org/
+
+BOTONES:
+
+https://www.common.wtf/
+
+
+
+Fuentes:
+
+fonts.google: https://fonts.google.com/
+
+Es.lipsum: https://es.lipsum.com/
+
+FontAwesome: https://fontawesome.com/
+
+
+
+Sistema de persistencia:
+
+SQLite: https://www.sqlite.org/index.html
+
+MariaDb: https://mariadb.org/
+
+MongoDb: https://www.mongodb.com/es
+
+Oracle: https://www.oracle.com/ar/index.html
+
+PostgreSQL: https://www.postgresql.org/
+
+Redis: https://redis.io/
+
+MySQL: https://www.mysql.com/
+
+DynamoDb: https://aws.amazon.com/es/dynamodb/
+
+AmazonRelationDataBaseService: https://aws.amazon.com/es/rds/
+
+
+
+Navegadores:
+
+Chrome: https://www.google.com/intl/es-419/chrome/
+
+Brave: https://brave.com/es/
+
+Chrome Canary: https://www.google.com/intl/es-419/chrome/canary/
+
+Chromium: https://www.chromium.org/
+
+Firefox Developer Edition: https://www.mozilla.org/es-AR/firefox/developer/
+
+Servicios web:
+
+Rest API
+
+Graphql API – Serverless Firebase
+
+AWS Amplify
+
+Cloudinary
+
+
+Desarrollo API:
+Postman: https://www.postman.com/product/graphql-client/
+
+Rest Client de VSCode: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+
+Servicios cloud:
+
+Azure: https://azure.microsoft.com/es-es/
+
+Amazon Web Services: https://aws.amazon.com/es/
+
+GoogleCloud: https://cloud.google.com/
+
+Docker - para empaquetar: https://www.docker.com/
+
+
+CMS:
+
+Wordpress: https://wordpress.com/es/
+
+Woocommerce: https://woocommerce.com/
+
+Magento: https://magento.com/
+
+Blogger: https://www.blogger.com/about/
+
+Ghost: https://ghost.org/
+
+
+Servers:
+
+Nginx: https://www.nginx.com/
+
+Apache: https://www.apache.org/
+
+Windowsiis: https://www.iis.net/
+
+Tomcat: http://tomcat.apache.org/
+
+Mobiledev:
+ionic (angular react vim )
+
+react native + expo, flutter
+
+
+EXPRESIONES REGULARES:
+
+https://cheatography.com/davechild/cheat-sheets/regular-expressions/
+
+https://regex101.com/
