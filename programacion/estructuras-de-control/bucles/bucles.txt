@@ -1,0 +1,54 @@
+
+Los bucles son estructuras de control de flujo que se utilizan en programación para repetir una sección de código varias veces. 
+Hay varios tipos de bucles, pero los más comunes son el "for", el "while" y el "do-while. 
+
+
+
+-------> BUCLE "for": 
+
+este bucle se utiliza para repetir una sección de código un número determinado de veces. 
+La estructura general es:
+
+for (inicialización; condición; incremento) {
+  // código a repetir
+}
+
+Bucle for-in: este bucle se utiliza para iterar sobre las propiedades de un objeto. 
+La estructura general es:
+
+for (variable in objeto) {
+  // código a repetir
+}
+
+Bucle for-of: este bucle se utiliza para iterar sobre los elementos de un objeto iterable (como un array). 
+La estructura general es:
+
+for (variable of iterable) {
+  // código a repetir
+}
+
+
+-------> BUCLE "while": 
+
+Este bucle se repite mientras una condición es verdadera. 
+La estructura general es:
+
+while (condición) {
+  // código a repetir
+}
+
+
+-------> BUCLE "do-while":
+
+Este bucle ejecuta un bloque de código al menos una vez y luego verifica una condición para determinar si debe repetirse. Si la condición es verdadera, el bucle se repite y el bloque de código se ejecuta nuevamente. Este proceso se repite hasta que la condición se evalúa como falsa.
+La estructura general es:
+
+do {
+  // código a repetir
+} while (condición);
+
+
+
+***Se utilizan para muchas tareas diferentes, desde la lectura de datos de entrada hasta la creación de 
+animaciones en la interfaz de usuario. Es importante tener cuidado al utilizar bucles para evitar 
+crear bucles infinitos o iteraciones innecesarias que pueden afectar negativamente el rendimiento de la aplicación.***

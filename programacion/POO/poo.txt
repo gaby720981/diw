@@ -1,0 +1,131 @@
+
+La Programación Orientada a Objetos (POO) es un paradigma de programación que se basa en la organización del código en objetos, los cuales son instancias de clases. 
+La POO se centra en la modularidad y la reutilización de código, al permitir la creación de objetos que contienen tanto datos (llamados atributos o propiedades) como funciones (llamadas métodos) relacionadas entre sí.
+
+En la POO, una clase es una plantilla o un plano que define las características y el comportamiento de un objeto. 
+Los objetos son instancias de una clase específica y se pueden crear múltiples objetos a partir de la misma clase. 
+Cada objeto tiene su propio estado (representado por los valores de sus atributos) y su propio comportamiento (representado por los métodos que puede realizar).
+
+La POO se basa en cuatro conceptos fundamentales:
+
+Abstracción: Permite identificar las características y comportamientos relevantes de un objeto en el contexto del programa, y encapsularlos en una clase.
+
+Encapsulamiento: Consiste en ocultar los detalles internos de implementación de una clase, y proporcionar una interfaz clara y definida para interactuar con los objetos.
+
+Herencia: Permite definir una clase nueva (llamada subclase o clase derivada) basada en una clase existente (llamada superclase o clase base), heredando sus atributos y métodos. La herencia permite la reutilización de código y la creación de jerarquías de clases.
+
+Polimorfismo: Permite utilizar un mismo nombre de método para realizar diferentes acciones en distintas clases. Esto significa que diferentes objetos pueden responder de manera diferente a un mismo mensaje.
+
+La POO se utiliza ampliamente en el desarrollo de software debido a su capacidad para modularizar y organizar el código de manera más eficiente, promoviendo la reutilización, la escalabilidad y el mantenimiento del código. Permite crear programas más estructurados, flexibles y fáciles de entender, lo que facilita el desarrollo de aplicaciones complejas.
+
+-----> EJEMPLOS:
+
+
+---------------->  Abstracción:
+
+python
+
+class Perro:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    
+    def ladrar(self):
+        print("¡Guau!")
+
+mi_perro = Perro("Max", 3)
+mi_perro.ladrar()
+
+En este ejemplo, se crea una clase llamada "Perro" que representa un perro. La clase tiene un atributo "nombre" y otro atributo "edad", y un método "ladrar" que imprime "¡Guau!". 
+La clase abstracta "Perro" encapsula las características y comportamientos relevantes de un perro.
+
+----------------> Encapsulamiento:
+
+python
+
+class CuentaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.__saldo = saldo
+    
+    def depositar(self, monto):
+        self.__saldo += monto
+    
+    def retirar(self, monto):
+        if self.__saldo >= monto:
+            self.__saldo -= monto
+        else:
+            print("Saldo insuficiente")
+    
+    def obtener_saldo(self):
+        return self.__saldo
+
+cuenta = CuentaBancaria("Juan", 1000)
+cuenta.depositar(500)
+cuenta.retirar(200)
+print(cuenta.obtener_saldo())
+
+En este ejemplo, se crea una clase "CuentaBancaria" que encapsula el atributo "saldo" y proporciona métodos para depositar, retirar y obtener el saldo. 
+El atributo "saldo" se define como privado (encapsulado) utilizando el doble guión bajo "__saldo", lo que significa que no se puede acceder directamente desde fuera de la clase. 
+Los métodos proporcionan una interfaz controlada para interactuar con el atributo encapsulado.
+
+----------------> Herencia:
+
+python
+
+class Animal:
+    def __init__(self, nombre):
+        self.nombre = nombre
+    
+    def saludar(self):
+        print(f"¡Hola! Soy un {self.nombre}.")
+
+class Perro(Animal):
+    def __init__(self, nombre, raza):
+        super().__init__(nombre)
+        self.raza = raza
+    
+    def ladrar(self):
+        print("¡Guau!")
+
+mi_perro = Perro("Max", "Labrador")
+mi_perro.saludar()
+mi_perro.ladrar()
+
+
+En este ejemplo, se define una clase base llamada "Animal" con un método "saludar". Luego, se crea una clase "Perro" que hereda de la clase "Animal" utilizando la declaración "class Perro(Animal)". 
+La clase "Perro" tiene su propio atributo "raza" y su propio método "ladrar". 
+Al heredar de la clase "Animal", la clase "Perro" tiene acceso a los atributos y métodos de la clase base, como el método "saludar".
+
+----------------> Polimorfismo:
+
+python
+
+class Animal:
+    def sonido(self):
+        pass
+
+class Perro(Animal):
+    def sonido(self):
+        print("¡Guau!")
+
+class Gato(Animal):
+    def sonido(self):
+        print("¡Miau!")
+
+def hacer_sonar(animal):
+    animal.sonido()
+
+perro = Perro()
+gato = Gato()
+
+hacer_sonar(perro)
+hacer_sonar(gato)
+
+En este ejemplo, se define una clase base "Animal" con un método "sonido" vacío. 
+Luego, se crean las clases "Perro" y "Gato" que heredan de "Animal" y sobrescriben el método "sonido" para imprimir el sonido característico de cada animal. 
+La función "hacer_sonar" toma un objeto animal como argumento y llama al método "sonido" de ese objeto. 
+Al llamar a "hacer_sonar" con un perro y un gato, se ejecuta el método "sonido" correspondiente a cada objeto, lo que demuestra el polimorfismo.
+
+
+

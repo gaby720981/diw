@@ -1,0 +1,65 @@
+Estructuras condicionales: 
+
+Permiten ejecutar un conjunto de instrucciones si se cumple una condición determinada. 
+Permiten controlar el flujo de ejecución de tu programa según diferentes condiciones y tomar decisiones basadas en esas condiciones.
+Las estructuras condicionales más comunes son el "if-else" y el "switch". 
+
+
+-------> Estructura condicional "if-else":
+
+Permite tomar decisiones basadas en una condición. Si la condición especificada se evalúa como verdadera, se ejecuta el bloque de código dentro del primer conjunto de llaves. Si la condición es falsa, se ejecuta el bloque de código dentro del segundo conjunto de llaves.
+
+JS
+
+if (condición) {
+  // código a ejecutar si la condición es verdadera
+} else {
+  // código a ejecutar si la condición es falsa
+}
+
+
+-------> Estructura condicional "elif":
+
+Se utiliza en algunos lenguajes de programación, como Python, como una abreviatura de "else if". 
+Permite evaluar múltiples condiciones en una estructura if-elif-else.
+
+py
+
+if condición1:
+    # código a ejecutar si condición1 es verdadera
+elif condición2:
+    # código a ejecutar si condición2 es verdadera
+elif condición3:
+    # código a ejecutar si condición3 es verdadera
+else:
+    # código a ejecutar si ninguna de las condiciones anteriores es verdadera
+
+En esta estructura, se evalúa la condición1. Si es verdadera, se ejecuta el bloque de código correspondiente. 
+Si la condición1 es falsa, se evalúa la condición2. Si es verdadera, se ejecuta su bloque de código correspondiente. 
+Este proceso se repite para todas las condiciones "elif" especificadas. 
+Si ninguna de las condiciones anteriores es verdadera, se ejecuta el bloque de código dentro del "else".
+
+
+-------> Estructura condicional"switch":
+
+La estructura "switch" permite seleccionar entre múltiples opciones basadas en el valor de una expresión. 
+La expresión se evalúa y luego se compara con los diferentes casos. 
+Si coincide con un caso, se ejecuta el bloque de código correspondiente. 
+Si no coincide con ningún caso, se ejecuta el bloque de código dentro de la declaración "default" (opcional).
+
+JS
+
+switch (expresión) {
+  case valor1:
+    // código a ejecutar si la expresión es igual a valor1
+    break;
+  case valor2:
+    // código a ejecutar si la expresión es igual a valor2
+    break;
+  default:
+    // código a ejecutar si la expresión no coincide con ningún valor anterior
+}
+
+
+
+
