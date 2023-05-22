@@ -1,0 +1,57 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    /*imagen de fondo*/
+    font-family: sans-serif;
+    /*fuente del texto*/
+}
+
+.established {
+    font-style: italic;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Impact, serif;
+}
+
+h1 {
+    font-size: 40px; /*tamaño de fuente*/
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.menu {
+    width: 80%;
+    /*80% del body*/
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    /*margen izquierdo y margen derecho, Usando estas dos propiedades de margen, centra el elemento div dentro del elemento body.*/
+    padding: 20px;
+    max-width: 500px;
+    /*ancho màximo del menú*/
+}
+
+.flavor, .dessert {
+    text-align: left;
+    /*alinea texto a la izquierda*/
+    width: 75%;
+    /*extiende el ancho de cada p*/
+}
+
+.price {
+    text-align: right;
+    /*alinea texto a la derecha*/
+    width: 25%;
+    /*extiende el ancho de cada p*/
+}
+
+.item p {
+    display: inline-block;
+    /*para que los elementos p se comporten como elementos inline (en línea)*/
+}
