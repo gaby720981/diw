@@ -88,3 +88,7 @@ a:visited { /*pseudoselector para cambiar propiedades cuando el enlace ha sido v
 a:hover {
     color: brown;
 }
+
+a:active { /*cambia propiedades cuando el enlace está siendo presionado*/
+    color: white
+}
