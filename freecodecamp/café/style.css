@@ -3,6 +3,7 @@ body {
     /*imagen de fondo*/
     font-family: sans-serif;
     /*fuente del texto*/
+    padding: 20px;
 }
 
 .established {
@@ -18,7 +19,8 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 40px; /*tamaño de fuente*/
+    font-size: 40px;
+    /*tamaño de fuente*/
 }
 
 h2 {
@@ -35,6 +37,16 @@ h2 {
     padding: 20px;
     max-width: 500px;
     /*ancho màximo del menú*/
+}
+
+hr {
+    height: 2px;
+    /*más el ancho del borde superior e inferior de 1px cada uno (border-width), la altura total queda en 4px*/
+    background-color: brown;
+    border-color: brown;
+}
+.bottom-line {
+    margin-top: 25px;
 }
 
 .flavor, .dessert {
@@ -54,4 +66,25 @@ h2 {
 .item p {
     display: inline-block;
     /*para que los elementos p se comporten como elementos inline (en línea)*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/*FOOTER*/
+
+footer {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+a:visited { /*pseudoselector para cambiar propiedades cuando el enlace ha sido visitado*/
+    color: gray;/*cambia de color*/
+}
+
+a:hover {
+    color: brown;
 }
