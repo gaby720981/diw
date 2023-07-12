@@ -2,27 +2,31 @@ h1 {
     text-align: center;
 }
 
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0; /*10px de relleno superior einferior y 0 de relleno a izq y derecha*/
+}
+
 .marker {
     height: 25px;
     width: 200px;
-    margin: 10px auto;
+    margin: 10px auto; 
 }
 
-.one {
-    background-color: rgb(255, 0, 0);
+.red {
+    background: rgb(255, 0, 0);
 }
 
-.two {
-    background-color: rgb(0, 127, 0);
+.green {
+    background-color:  #007f00;
 }
 
-.three {
-    background-color: rgb(0, 0, 255);
+.blue {
+    background-color: hsl(240, 100%, 50%);
 }
 
-.container {
-    background-color: rgb(0, 0, 0);
-}
-/*Hay dos modelos principales de colores: 
-el modelo aditivo RGB (rojo, verde, azul) utilizado en dispositivos electrónicos, cada valor es un número de 0 a 255;
-y el modelo sustractivo CMYK (cian, magenta, amarillo, negro) utilizado para impresión.*/
+
+/* Hay dos modelos principales de colores: 
+el modelo aditivo RGB (rojo, verde, azul) utilizado en dispositivos electrónicos, cada valor es un número de 0 a 255; y el modelo sustractivo CMYK (cian, magenta, amarillo, negro) utilizado para impresión.  
+Es práctica muy común aplicar color a un elemento CSS con valores hexadecimales, empiezan con el carácter #, siguiendo seis caracteres entre 0-9 y A-F. El primer par de caracteres representa el rojo, el segundo el verde y el tercero el azul. 
+Otra forma de representar colores es el modelo HSL, siglas de hue, saturation y lightness (matiz, saturación y luminosidad).*/

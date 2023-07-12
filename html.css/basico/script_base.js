@@ -61,7 +61,7 @@ let nombre = "Gaby"
 console.log("Mi nombre es", nombre)
 
 //NUMBER
-let edad = 35
+let edad = 30
 console.log("Mi edad es", edad)
 
 //BOLEAN
