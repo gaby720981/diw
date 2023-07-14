@@ -1,0 +1,12 @@
+RELATIVAS:
+
+em :    1em = 16px
+        5em = 80px
+
+rem
+
+Cuando se establece un tamaño de fuente en "em" para un elemento secundario dentro de un contenedor, el valor en "em" se hereda del tamaño de fuente del elemento padre. Esto significa que si un contenedor tiene un tamaño de fuente de 20px y un elemento secundario, como un encabezado <h1>, tiene un tamaño de fuente de 1em, entonces el tamaño real del encabezado será de 20px.
+
+vw : "viewport width" (ancho del área visible) y representa el 100% del ancho total del área visible del navegador. Por ejemplo, 100vw es igual al 100% del ancho de la ventana del navegador.
+
+vh : "viewport height" (alto del área visible) y representa el 100% de la altura total del área visible del navegador. Por ejemplo, 100vh es igual al 100% de la altura de la ventana del navegador.
