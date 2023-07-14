@@ -10,3 +10,4 @@ Cuando se establece un tamaño de fuente en "em" para un elemento secundario den
 vw : "viewport width" (ancho del área visible) y representa el 100% del ancho total del área visible del navegador. Por ejemplo, 100vw es igual al 100% del ancho de la ventana del navegador.
 
 vh : "viewport height" (alto del área visible) y representa el 100% de la altura total del área visible del navegador. Por ejemplo, 100vh es igual al 100% de la altura de la ventana del navegador.
+

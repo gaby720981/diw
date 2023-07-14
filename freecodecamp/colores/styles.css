@@ -1,45 +1,48 @@
 h1 {
     text-align: center;
-}
-
-.container {
+  }
+  
+  .container {
     background-color: rgb(255, 255, 255);
-    padding: 10px 0; /*10px de relleno superior einferior y 0 de relleno a izq y derecha*/
-}
-
-.marker {
-    height: 25px;
+    padding: 10px 0;
+  }
+  
+  .marker {
     width: 200px;
-    margin: 10px auto; 
-}
-
-.cap {
+    height: 25px;
+    margin: 10px auto;
+  }
+  
+  .cap {
     width: 60px;
     height: 25px;
-}
-
-.sleeve {
+  }
+  
+  .sleeve {
     width: 110px;
     height: 25px;
     background-color: rgba(255, 255, 255, 0.5);
-    /* border-left-width: 10px;
-    border-left-style: solid;
-    border-left-color: black; */
-    border-left: 10px double black;
-}
-
-.red {
-    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    border-left: 10px double rgba(0, 0, 0, 0.75);
   }
+  
+  .cap, .sleeve {
+    display: inline-block;
+  }
+  
+  .red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8)
+ }
   
   .green {
     background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3b7e20cc;;
   }
   
   .blue {
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-  }
-
+    box-shadow: 0 0 20px 0 hsl(223, 59%, 31%, 0.8);
+}
 
 /* Hay dos modelos principales de colores: 
 el modelo aditivo RGB (rojo, verde, azul) utilizado en dispositivos electrónicos, cada valor es un número de 0 a 255; y el modelo sustractivo CMYK (cian, magenta, amarillo, negro) utilizado para impresión.  
