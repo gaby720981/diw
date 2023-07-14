@@ -1,0 +1,17 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+.contact-form {
+font-size: 25px;
+background-color: rgb(131, 243, 243);
+}
+
+.contact-form__h2 {
+    font-size: 2em; /*tamaño*/
+    font-family: 'Lobster', cursive;
+    line-height: 3; /*altura de una línea. si es por ej 2, ocupa el doble de su tamaño*/
+    font-weight: 500; /*grosor*/
+    color:blue
+}
