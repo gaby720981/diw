@@ -1,0 +1,16 @@
+
+!important
+
+estilos en línea
+
+#ID
+
+.clases
+pseudo-clases
+atributos
+
+elementos (h2, p)
+pseudo-elementos(p:hover)
+
+* selector universal
+
