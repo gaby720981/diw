@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div {
+    width: 700px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.caja1 {
+    background-color: rgb(162, 107, 214);
+}
+.caja2 {
+    background-color: rgb(222, 172, 172);
+}
+.caja3 {
+    background-color: rgb(225, 123, 177);
+}
+.caja4 {
+    background-color: rgb(164, 241, 241);
+}

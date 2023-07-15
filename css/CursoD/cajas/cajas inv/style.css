@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box; /*el tamaño total del elemento incluirá el contenido, el padding y el borde, evitando que se sume el tamaño de los bordes y el padding al ancho y alto establecidos.*/
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+div {
+    width: 100vw; /* 100% del ancho de la ventana del navegador */
+    height: 100vh; /* 100% de la altura de la ventana del navegador */
+    display: flex; /*convierte al div en un contenedor flexible*/
+    justify-content: center; /*alineación horizontal*/
+    align-items: center; /*alineación vertical*/
+    color: aliceblue;
+}
+
+H1 {
+    font-size: 8vw; /* (viewport width) para que el tamaño del texto sea proporcional al ancho de la ventana del navegador */
+}
+
+
+/* .caja1 {
+    background-color: rgb(162, 107, 214);
+}
+.caja2 {
+    background-color:rgb(222, 172, 172);
+}
+.caja3 {
+    background-color:rgb(225, 123, 177);
+}
+.caja4 {
+    background-color:rgb(164, 241, 241);
+} */
+
