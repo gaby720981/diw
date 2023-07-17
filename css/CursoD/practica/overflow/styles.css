@@ -1,0 +1,21 @@
+* {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.auto {
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    background-color: gray;
+    overflow: auto; /*scrollear dentro de la caja, lo coloca si es necesario*/
+}
+.scroll {
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    background-color: gray;
+    overflow: scroll; /*aunque no necesite, coloca igualmente las barras*/
+}
