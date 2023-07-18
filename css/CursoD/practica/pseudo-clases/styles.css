@@ -1,0 +1,46 @@
+* {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.caja1 {
+    height: 200px;
+    width: 200px;
+    background-color: slateblue;
+    transition: backgroumd .5s, height .5s, width .5s;
+}
+
+.caja1:hover {
+    background-color:blue;
+    height: 300px;
+    width: 300px;
+}
+
+.boton {
+    padding: 20px;
+    background-color: rgb(133, 210, 249);
+}
+
+.boton:hover {
+    background-color: rgb(27, 103, 136);
+    color: aliceblue;
+}
+
+.visite {
+    color: black;
+}
+
+.visite:link {
+    color:rgb(17, 5, 186);
+} /*ENLACE NO VISITADO*/
+
+.caja2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(50, 22, 232);
+}
+
+.caja2:active {
+    background-color: rgb(31, 12, 108);
+    width: 400px;
+} /*CUANDO SE MANTENGA EL CLIK ENCIMA DEL ELEMENTO*/
