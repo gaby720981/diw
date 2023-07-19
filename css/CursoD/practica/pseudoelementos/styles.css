@@ -1,0 +1,48 @@
+* {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(229, 217, 239);
+}
+
+.texto {
+    padding: 20px; /*relleno interno del contenedor*/
+    text-align: justify;
+}
+
+.texto::first-line /*aplicará propiedades dinámicamente a la primer línea*/{
+    color: #0000ff;
+}
+
+.texto::first-letter /*primer letra*/{
+    font-size: 50px;
+    color: #8a2be2;
+}
+
+/*NO SE PUEDEN APLICAR A ELEMENTOS INLINE
+::first-line
+::first-letter 
+*/
+
+form {
+   margin-left: 20px; /*ALINEADO AL TEXTO*/
+   background-color: #555;
+   width: 50%; /*ANCHO AL 50% DE SU CONTENEDOR*/
+}
+
+input {
+    padding: 8px; /*relleno interno del contenedor*/
+    width: 100%;
+}
+
+input::placeholder {
+    color: #8a2be2;
+    font-size: 15px;
+}
+
+/* PSEUDOELEMENTOS EN LINEA
+::before       ::after
+ CREAN ELEMENTOS NUEVOS QUE NO FORMAN PARTE DEL DOM
+*/
