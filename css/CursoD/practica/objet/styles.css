@@ -12,5 +12,15 @@
    width: 100%;
    border: 2px solid red;
    /*object-fit: contain; SE MANTIENE LA RESOLUCION DE LA IMG Y NO RELLENA ESPACIO DEL CONTENEDOR*/
+
    object-fit: cover; /*LA IMAGEN SE AJUSTA A SU CONTENEDOR MANTENIENDO RESOLUCION*/
+
+   /*object-fit: contain;*/ /*por defecto, la resolucion de img se mantiene*/
+
+   /*object-fit: fill;*/
+   
+   /*object-fit: none;*/ /*resolucion original*/
+
+   /*object-fit: scale-down;*/ /*se queda con la mejor propiedad*/
+
 }

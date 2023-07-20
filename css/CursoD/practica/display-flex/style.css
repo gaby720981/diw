@@ -10,7 +10,7 @@
 
     flex-wrap: wrap; /*las cajas mantienen su tamaño y se acomodan abajo*/
 
-    /*justify-content:center;*/  /*centra*/
+    /*justify-content:center;*/  /*centra sus elementos*/
     /*justify-content: space-around;*/ /*similar a margin auto*/
     /*justify-content: space-between;*/ /*la maxima distancia entre cajas*/ 
     justify-content: space-evenly; /*cada caja con mismos margenes*/

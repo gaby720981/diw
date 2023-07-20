@@ -54,7 +54,7 @@ Propiedades:
 4:18:25 - Menu Responsive OK--------------------------------------------------------------------------------------
 
 
-FLEXBOX (REPASAR)
+FLEXBOX
 
 4:46:44 - Introducción a Flexbox  OK------------------------------------------------------------------------------
 4:48:55 - Conceptos de Flexbox  OK--------------------------------------------------------------------------------
@@ -68,7 +68,7 @@ FLEXBOX (REPASAR)
 5:36:15 - Order OK------------------------------------------------------------------------------------------------
 5:40:22 - Formulario con Flex OK----------------------------------------------------------------------------------
 
-GRID
+GRID 
 
 6:05:00 - Conceptos de Grid
 6:15:47 - Display Grid
@@ -85,6 +85,9 @@ GRID
 7:23:17 - Grid Areas
 7:31:09 - Nombrar Grid Lines
 7:37:14 - Grid Shorthands
+
+RESPONSIVE
+
 7:40:06 - Responsive Design
 7:57:01 - Estructura Responsive Básica
 

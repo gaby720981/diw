@@ -1,0 +1,8 @@
+.texto {
+    font-size: 3em; /*tamaño*/
+    font-family: Arial, Helvetica, sans-serif; /*fuente*/
+    line-height: 2; /*espacio total que ocupa*/
+    font-weight: 200; /*grosor*/
+    color: blue;
+    text-align: center; /*centra*/
+}
