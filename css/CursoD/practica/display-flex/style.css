@@ -8,17 +8,18 @@
     height: 100vh;
     display: flex; /*cajas flexibles a sus elementos hijos*/
 
-    flex-wrap: wrap; /*las cajas mantienen su tamaño y se acomodan abajo*/
+    flex-wrap: wrap; /*FLEX-WRAP especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. */
 
     /*justify-content:center;*/  /*centra sus elementos*/
     /*justify-content: space-around;*/ /*similar a margin auto*/
     /*justify-content: space-between;*/ /*la maxima distancia entre cajas*/ 
     justify-content: space-evenly; /*cada caja con mismos margenes*/
 
-    /*align-items: center;*/ /*centra verticalmente, cuano hay una linea de elementos*/
+    /*align-items: center; /*centra verticalmente, cuano hay una linea de elementos*/
     /*align-items: flex-end;*/ /*al final*/
 
-    align-content: center; /*con varias lineas de elementos*/
+    align-content: center; /*con varias lineas de elementos.
+    ajusta las líneas dentro de un contenedor flex cuando hay espacio extra en el eje transversal.*/
 }
 
 .flex-item {
