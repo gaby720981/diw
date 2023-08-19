@@ -1,0 +1,36 @@
+.canvas {
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+    background-color: #4d0f00;
+}
+
+.frame {
+    border: 50px solid black;
+    width: 500px;
+    padding: 50px;
+    margin: 20px auto;
+}
+
+.one {
+    width: 425px;
+    height: 150px;
+    background-color: #efb762;
+    margin: 20px auto;
+}
+
+.two {
+    width: 475px;
+    height: 200px;
+    margin: auto;
+    background-color: #8f0401;
+    
+}
+
+.three {
+    width: 91%;
+    height: 28%;
+    margin: auto;
+    background-color: #b20403;
+
+}
