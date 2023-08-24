@@ -1,0 +1,21 @@
+Flexbox es un diseño CSS unidimensional que puede controlar la forma en que los elementos se espacian y alinean dentro de un contenedor.
+
+Para utilizarlo, dale a un elemento una propiedad display con el valor flex. Esto hará que el elemento sea un flex container (contenedor flexible). Todos los hijos directos de un contenedor flex se llaman flex items (elementos flex). 
+
+Flexbox tiene un eje principal y otro transversal. El eje principal está definido por la propiedad flex-direction, que tiene cuatro valores posibles:
+
+row (por defecto): eje horizontal con elementos flex de izquierda a derecha
+row-reverse: eje horizontal con elementos flex de derecha a izquierda
+column: eje vertical con elementos flexibles de arriba a abajo
+column-reverse: eje vertical con elementos flexibles de abajo a arriba
+
+La propiedad flex-wrap determina como se comportan tus elementos flex cuando el contenedor flex es demasiado pequeño. Si se establece como wrap, los elementos se colocan en la siguiente fila o columna. nowrap (por defecto) evitará que los elementos se coloquen en varias líneas y los encogerá si es necesario.
+
+La propiedad justify-content determina cómo se posicionan los elementos dentro de un contenedor flex a lo largo del eje principal, afectando a su posición y al espacio que los rodea.
+
+La propiedad align-items posiciona el contenido flex a lo largo del eje transversal, con tu flex-direction establecido en row, el eje transversal sería vertical.
+
+La propiedad CSS abreviada gap establece los espacios, también conocidos como canales, entre filas y columnas. La propiedad gap y sus subpropiedades row-gap y column-gap proporcionan esta funcionalidad para los diseños flex, grid, y multicolumna. La propiedad se aplica al elemento contenedor.
+
+El pseudo-elemento ::after crea un elemento que es el último hijo del elemento seleccionado. Puedes hacer uso de él para añadir un elemento vacío a continuación de la ultima imagen. Si en su propiedad width se le asigna el mismo valor que tiene en las imágenes, empujará la última imagen hacia la izquierda cuando la galería tenga un diseño de dos columnas. 
+
