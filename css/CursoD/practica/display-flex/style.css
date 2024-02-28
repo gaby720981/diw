@@ -23,8 +23,19 @@
 }
 
 .flex-item {
-    background-color: black;
+    background-color: rgb(17, 60, 179);
     margin: 5px;
     height: 120px;
     width: 120px;
+}
+
+.flex-center {
+    background-color: blueviolet;
+    margin: 5px;
+    height: 120px;
+    width: 120px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

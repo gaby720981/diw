@@ -22,24 +22,22 @@ let confetti = []
 let sequins = []
 
 const colors = [
-  { front : '#FF1200', back: '#FF1200' }, // Purple
-  { front : '#E0AD0B', back: '#E0AD0B' }, // Light Blue
-  { front : '#C6A53E', back: '#C6A53E' }  // Darker Blue
+  { front: '#E0AD0B', back: '#E0AD0B' }, 
+  { front: '#E0AD0B', back: '#E0AD0B' }, 
+  { front: '#E0AD0B', back: '#E0AD0B' },
 ]
 
-
 randomRange = (min, max) => Math.random() * (max - min) + min
-
 
 initConfettoVelocity = (xRange, yRange) => {
   const x = randomRange(xRange[0], xRange[1])
   const range = yRange[1] - yRange[0] + 1
-  let y = yRange[1] - Math.abs(randomRange(0, range) + randomRange(0, range) - range)
+  let y = yRange[0] + Math.abs(randomRange(0, range) + randomRange(0, range) - range)
   if (y >= yRange[1] - 1) {
     // Occasional confetto goes higher than the max
-    y += (Math.random() < .25) ? randomRange(1, 3) : 0
+    y -= (Math.random() < .25) ? randomRange(1, 3) : 0
   }
-  return {x: x, y: -y}
+  return { x: x, y: -y }
 }
 
 
@@ -51,8 +49,8 @@ function Confetto() {
     y: randomRange(8, 15),
   }
   this.position = {
-    x: randomRange(canvas.width/2 - button.offsetWidth/4, canvas.width/2 + button.offsetWidth/4),
-    y: randomRange(canvas.height/2 + button.offsetHeight/2 + 8, canvas.height/2 + (1.5 * button.offsetHeight) - 8),
+    x: randomRange(canvas.width / 2 - button.offsetWidth / 4, canvas.width / 2 + button.offsetWidth / 4),
+    y: randomRange(canvas.height / 2 + button.offsetHeight / 2, canvas.height / 2 + (1.5 * button.offsetHeight)),
   }
   this.rotation = randomRange(0, 2 * Math.PI)
   this.scale = {
@@ -61,41 +59,29 @@ function Confetto() {
   }
   this.velocity = initConfettoVelocity([-9, 9], [6, 11])
 }
-Confetto.prototype.update = function() {
-  // apply forces to velocity
-  this.velocity.x -= this.velocity.x * dragConfetti
-  this.velocity.y = Math.min(this.velocity.y + gravityConfetti, terminalVelocity)
-  this.velocity.x += Math.random() > 0.5 ? Math.random() : -Math.random()
-  
-  // set position
-  this.position.x += this.velocity.x
-  this.position.y += this.velocity.y
-
-  // spin confetto by scaling y and set the color, .09 just slows cosine frequency
-  this.scale.y = Math.cos((this.position.y + this.randomModifier) * 0.09)    
-}
 
 // Sequin Class
 function Sequin() {
   this.color = colors[Math.floor(randomRange(0, colors.length))].back,
-  this.radius = randomRange(1, 2),
-  this.position = {
-    x: randomRange(canvas.width/2 - button.offsetWidth/3, canvas.width/2 + button.offsetWidth/3),
-    y: randomRange(canvas.height/2 + button.offsetHeight/2 + 8, canvas.height/2 + (1.5 * button.offsetHeight) - 8),
-  },
-  this.velocity = {
-    x: randomRange(-6, 6),
-    y: randomRange(-8, -12)
-  }
+    this.radius = randomRange(1, 2),
+    this.position = {
+      x: randomRange(canvas.width / 2 - button.offsetWidth / 3, canvas.width / 2 + button.offsetWidth / 3),
+      y: randomRange(canvas.height / 2 + button.offsetHeight / 2, canvas.height / 2 + (1.5 * button.offsetHeight)),
+    },
+    this.velocity = {
+      x: randomRange(-6, 6),
+      y: randomRange(-8, -12)
+    }
 }
-Sequin.prototype.update = function() {
+
+Sequin.prototype.update = function () {
   // apply forces to velocity
   this.velocity.x -= this.velocity.x * dragSequins
   this.velocity.y = this.velocity.y + gravitySequins
-  
+
   // set position
   this.position.x += this.velocity.x
-  this.position.y += this.velocity.y   
+  this.position.y += this.velocity.y
 }
 
 // add elements to arrays to be drawn
@@ -111,43 +97,43 @@ initBurst = () => {
 // draws the elements on the canvas
 render = () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height)
-  
+
   confetti.forEach((confetto, index) => {
     let width = (confetto.dimensions.x * confetto.scale.x)
     let height = (confetto.dimensions.y * confetto.scale.y)
-    
+
     // move canvas to position and rotate
     ctx.translate(confetto.position.x, confetto.position.y)
     ctx.rotate(confetto.rotation)
 
     // update confetto "physics" values
     confetto.update()
-    
+
     // get front or back fill color
     ctx.fillStyle = confetto.scale.y > 0 ? confetto.color.front : confetto.color.back
-    
+
     // draw confetto
     ctx.fillRect(-width / 2, -height / 2, width, height)
-    
+
     // reset transform matrix
     ctx.setTransform(1, 0, 0, 1, 0, 0)
 
     // clear rectangle where button cuts off
     if (confetto.velocity.y < 0) {
-      ctx.clearRect(canvas.width/2 - button.offsetWidth/2, canvas.height/2 + button.offsetHeight/2, button.offsetWidth, button.offsetHeight)
+      ctx.clearRect(canvas.width / 2 - button.offsetWidth / 2, canvas.height / 2 + button.offsetHeight / 2, button.offsetWidth, button.offsetHeight)
     }
   })
 
-  sequins.forEach((sequin, index) => {  
+  sequins.forEach((sequin, index) => {
     // move canvas to position
     ctx.translate(sequin.position.x, sequin.position.y)
-    
+
     // update sequin "physics" values
     sequin.update()
-    
+
     // set the color
     ctx.fillStyle = sequin.color
-    
+
     // draw sequin
     ctx.beginPath()
     ctx.arc(0, 0, sequin.radius, 0, 2 * Math.PI)
@@ -158,12 +144,12 @@ render = () => {
 
     // clear rectangle where button cuts off
     if (sequin.velocity.y < 0) {
-      ctx.clearRect(canvas.width/2 - button.offsetWidth/2, canvas.height/2 + button.offsetHeight/2, button.offsetWidth, button.offsetHeight)
+      ctx.clearRect(canvas.width / 2 - button.offsetWidth / 2, canvas.height / 2 + button.offsetHeight / 2, button.offsetWidth, button.offsetHeight)
     }
   })
 
   // remove confetti and sequins that fall off the screen
-  // must be done in seperate loops to avoid noticeable flickering
+  // must be done in separate loops to avoid noticeable flickering
   confetti.forEach((confetto, index) => {
     if (confetto.position.y >= canvas.height) confetti.splice(index, 1)
   })
@@ -174,28 +160,43 @@ render = () => {
   window.requestAnimationFrame(render)
 }
 
-// cycle through button states when clicked
+redirectToLinkInNewTab = () => {
+  window.open("https://web.whatsapp.com/", "_blank");
+}
+
+// Modifica la función clickButton
 clickButton = () => {
   if (!disabled) {
-    disabled = true
-    // Loading stage
-    button.classList.add('loading')
-    button.classList.remove('ready')
-    setTimeout(() => {
-      // Completed stage
-      button.classList.add('complete')
-      button.classList.remove('loading')
-      setTimeout(() => {
-        window.initBurst()
-        setTimeout(() => {
-          // Reset button so user can select it again
-          disabled = false
-          button.classList.add('ready')
-          button.classList.remove('complete')
-        }, 200)
-      }, 100)
-    }, 200)
+    disabled = true;
+
+    // Inicia el efecto de confeti
+    window.initBurst();
+
+    // Espera a que termine la animación de confeti antes de redirigir en otra pestaña
+    playConfettiAnimation().then(() => {
+      // Redirecciona al enlace en otra pestaña después de que termine la animación
+      redirectToLinkInNewTab();
+
+      // Reset button so user can select it again
+      disabled = false;
+      button.classList.remove('complete');
+      button.classList.add('ready');
+    });
   }
+}
+
+// Función para animar el confeti y resolver una promesa cuando termine
+playConfettiAnimation = () => {
+  return new Promise((resolve) => {
+    button.classList.add('complete');
+    setTimeout(() => {
+      window.initBurst();
+      setTimeout(() => {
+        // Resuelve la promesa cuando termine la animación de confeti
+        resolve();
+      }, 1000);
+    }, 100);
+  });
 }
 
 // re-init canvas if the window size changes
@@ -206,7 +207,7 @@ resizeCanvas = () => {
   cy = ctx.canvas.height / 2
 }
 
-// resize listenter
+// resize listener
 window.addEventListener('resize', () => {
   resizeCanvas()
 })

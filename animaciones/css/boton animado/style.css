@@ -32,9 +32,9 @@ body {
     z-index: 1;
   
     &::before {
-      background: #1f2335;
+      background: #486076;
       border-radius: 50px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, .4) inset;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4) inset;
       content: '';
       display: block;
       height: 100%;
@@ -47,13 +47,13 @@ body {
   
   
   button.ready {
-    .submitMessage svg {
+    /* .submitMessage svg {
       opacity: 1;
       top: 1px;
       transition: top .1s ease 600ms, opacity .3s linear 600ms;
-    }
+    } */
   
-    .submitMessage .button-text span {
+    .button-text span {
       top: 0;
       opacity: 1;
       transition: all .1s ease calc(var(--dr) + 600ms);
@@ -61,29 +61,30 @@ body {
   }
   
  
-  button.complete {
+  /* button.complete {
     .submitMessage svg {
       top: -30px;
       transition: none;
-    }
+    } */
   
-    .submitMessage .button-text span {
+    /* .submitMessage .button-text span {
       top: -8px;
       transition: none;
-    }
+    } */
   
-  
+/*   
     .successMessage .button-text span {
       left: 0;
       opacity: 1;
       transition: all .2s ease calc(var(--d) + 1000ms);
-    }
+    } */
   
-    .successMessage svg { 
+    /* .successMessage svg { 
       stroke-dashoffset: 0;
       transition: stroke-dashoffset .3s ease-in-out 1.4s;
-    }
-  }
+    } 
+     }*/
+ 
   
   .button-text span {
     opacity: 0;
@@ -98,16 +99,16 @@ body {
     width: 100%;
   }
   
-  .message svg {
+  /* .message svg {
     display: inline-block;
     fill: none;
     margin-right: 5px;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 2;
-  }
+  } */
   
-  .submitMessage {
+  /* .submitMessage {
     .button-text span {
       top: 8px;
       transition: all .2s ease var(--d);
@@ -123,15 +124,15 @@ body {
       width: 14px;
     }
   }
+   */
   
-  
-    svg {
+    /* svg {
       fill: #5c86ff;
       margin: 0;
       width: 22px;
-    }
+    } */
   
-  .successMessage {
+  /* .successMessage {
     .button-text span {
       left: 5px;
       transition: all .2s ease var(--dr);
@@ -144,4 +145,4 @@ body {
       transition: stroke-dashoffset .3s ease-in-out;
       width: 14px;
     }
-  }
+  } */
