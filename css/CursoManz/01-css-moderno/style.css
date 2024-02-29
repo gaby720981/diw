@@ -1,0 +1,24 @@
+/* Agrupación de selectores */
+.container :is(.item, .parent, .element){
+    font-weight: 700;
+    color: #4e006f;
+}
+
+/* Escribir colores RGB con canales alfa (transparencias) */
+.container {
+    background: rgb(100% 100% 0 / 30%);
+  }
+
+/* ANIDAR CODIGO */
+  /* .parent {
+    background: grey;
+  
+    & .element {
+      background: darkred;
+  
+      &:hover {
+        background: red;
+      }
+    }
+  } */
+
