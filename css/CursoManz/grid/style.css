@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+  }
+  
+  .item {
+    background: deeppink;
+  }
+  
+  .middle {
+    display: contents;
+  }
+
+  /*
+  Si introducimos un elemento con clase .middle dentro del .grid, que envuelva a todos los .item, el grid dejaría de funcionar porque se ha eliminado la relación padre-hijo entre .grid y los elementos .item. Sin embargo, si añadimos un .middle con un CSS asociado .middle { display: contents }, el navegador ignorará ese elemento intermedio que insertamos por razones de funcionalidad (normalmente en situaciones de sólo diseño no ocurre) y hará como que no existe
+  */
