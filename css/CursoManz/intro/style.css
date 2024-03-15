@@ -34,7 +34,9 @@ EL 4TO ELEMENTO ES EL CANAL ALFA PARA INDICAR EL GRADO DE TRANSPARENCIA */
 }
 
 .container3 {
-    display: flex; /**/
+    display: flex; /*coloca los div uno al lado del otro*/
+    justify-content: center; /*centra los elementos HORIZONTAL*/
+    align-items: center; /*centra los elementos VERTICAL*/
     width: 650px;
     height: 300px;
     background: #808080;
@@ -43,7 +45,15 @@ EL 4TO ELEMENTO ES EL CANAL ALFA PARA INDICAR EL GRADO DE TRANSPARENCIA */
 .item {
     width: 100px;
     height: 100px;
-    background: #ff0000;
+    border-radius: 40%;
+    background: #111ab9;
+}
+
+.container4 {
+    display: grid; /*coloca los div uno debajo del otro*/
+    width: 650px;
+    height: 300px;
+    background: #808080;
 }
 
 
